@@ -7190,7 +7190,7 @@
             "FromIntegratedStrategies"
         ]
     },
-    "Roguelike1@BattleExitBegin": {
+    "RoguelikeBattleExitBegin": {
         "action": "ClickSelf",
         "roi": [
             3,
@@ -7203,11 +7203,11 @@
             255
         ],
         "next": [
-            "Roguelike1@BattleAbandon",
-            "Roguelike1@BattleExitBegin"
+            "RoguelikeBattleAbandon",
+            "RoguelikeBattleExitBegin"
         ]
     },
-    "Roguelike1@BattleAbandon": {
+    "RoguelikeBattleAbandon": {
         "action": "ClickSelf",
         "roi": [
             648,
@@ -7216,11 +7216,11 @@
             246
         ],
         "next": [
-            "Roguelike1@BattleAbandonConfirm",
-            "Roguelike1@BattleAbandon"
+            "RoguelikeBattleAbandonConfirm",
+            "RoguelikeBattleAbandon"
         ]
     },
-    "Roguelike1@BattleAbandonConfirm": {
+    "RoguelikeBattleAbandonConfirm": {
         "action": "ClickSelf",
         "roi": [
             716,
@@ -7229,7 +7229,7 @@
             153
         ],
         "next": [
-            "Roguelike1@BattleAbandonConfirm",
+            "RoguelikeBattleAbandonConfirm",
             "Stop"
         ]
     },
@@ -8764,49 +8764,6 @@
             "Roguelike1@StartToWakeUp",
             "Roguelike1@StartUpConnectingFlag",
             "Roguelike1@ClickToStartPoint"
-        ]
-    },
-    "Roguelike2@BattleExitBegin": {
-        "action": "ClickSelf",
-        "roi": [
-            3,
-            0,
-            153,
-            154
-        ],
-        "maskRange": [
-            100,
-            255
-        ],
-        "next": [
-            "Roguelike2@BattleAbandon",
-            "Roguelike2@BattleExitBegin"
-        ]
-    },
-    "Roguelike2@BattleAbandon": {
-        "action": "ClickSelf",
-        "roi": [
-            648,
-            229,
-            220,
-            246
-        ],
-        "next": [
-            "Roguelike2@BattleAbandonConfirm",
-            "Roguelike2@BattleAbandon"
-        ]
-    },
-    "Roguelike2@BattleAbandonConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            716,
-            416,
-            259,
-            153
-        ],
-        "next": [
-            "Roguelike2@BattleAbandonConfirm",
-            "Stop"
         ]
     },
     "Roguelike2@Main": {

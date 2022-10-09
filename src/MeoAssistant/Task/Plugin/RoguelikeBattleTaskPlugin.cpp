@@ -696,11 +696,7 @@ bool asst::RoguelikeBattleTaskPlugin::retreat(const Point& point)
 
 bool asst::RoguelikeBattleTaskPlugin::abandon()
 {
-    auto roguelike_name = m_status->get_properties("roguelike_name");
-    if (!roguelike_name) {
-        return false;
-    }
-    return ProcessTask(*this, { roguelike_name.value() + "@BattleExitBegin" }).run();
+    return ProcessTask(*this, { "RoguelikeBattleExitBegin" }).run();
 }
 
 void asst::RoguelikeBattleTaskPlugin::all_melee_retreat()
