@@ -6969,7 +6969,7 @@
         ]
     },
     "RoguelikeTraderShopping": {
-        "template": "Roguelike1TraderRandomShopping.png",
+        "template": "Roguelike1@TraderRandomShopping.png",
         "templThreshold": 0.7,
         "roi": [
             480,
@@ -6994,7 +6994,7 @@
         "ocrReplace": []
     },
     "RoguelikeTraderShoppingOver": {
-        "template": "Roguelike1StageTraderLeave.png",
+        "template": "Roguelike1@StageTraderLeave.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7022,7 +7022,7 @@
         ]
     },
     "RoguelikeQuickFormationClearAndReselect-Confirm": {
-        "template": "Roguelike1FormationConfirm.png",
+        "template": "Roguelike1@FormationConfirm.png",
         "action": "ClickSelf",
         "roi": [
             1015,
@@ -7036,7 +7036,7 @@
         ]
     },
     "RoguelikeQuickFormationClearAndReselect-Formation": {
-        "template": "Roguelike1QuickFormation.png",
+        "template": "Roguelike1@QuickFormation.png",
         "action": "ClickSelf",
         "roi": [
             817,
@@ -7144,7 +7144,7 @@
     },
     "RoguelikeWaitBattleStart": {
         "Doc": "点了开始行动之后，可能会网络不好一直loading，用这个任务等一会",
-        "template": "Roguelike1QuickFormation.png",
+        "template": "Roguelike1@QuickFormation.png",
         "action": "DoNothing",
         "roi": [
             817,
@@ -7154,6 +7154,40 @@
         ],
         "next": [
             "RoguelikeWaitBattleStart"
+        ]
+    },
+    "Begin": {
+        "Doc": "Roguelike base task",
+        "algorithm": "JustReturn"
+    },
+    "FromIntegratedStrategies": {
+        "algorithm": "OcrDetect",
+        "action": "ClickSelf",
+        "text": [
+            "进入主题"
+        ],
+        "roi": [
+            1006,
+            445,
+            246,
+            157
+        ],
+        "next": [
+            "FromIntegratedStrategies",
+            "Begin"
+        ]
+    },
+    "IntegratedStrategies": {
+        "action": "ClickSelf",
+        "roi": [
+            963,
+            599,
+            148,
+            121
+        ],
+        "next": [
+            "IntegratedStrategies",
+            "FromIntegratedStrategies"
         ]
     },
     "Roguelike1@BattleExitBegin": {
@@ -7231,36 +7265,6 @@
         ],
         "next": [
             "Roguelike1@TodoEnter",
-            "Roguelike1@Begin"
-        ]
-    },
-    "Roguelike1@IntegratedStrategies": {
-        "action": "ClickSelf",
-        "roi": [
-            963,
-            599,
-            148,
-            121
-        ],
-        "next": [
-            "Roguelike1@IntegratedStrategies",
-            "Roguelike1@FromIntegratedStrategies"
-        ]
-    },
-    "Roguelike1@FromIntegratedStrategies": {
-        "algorithm": "OcrDetect",
-        "action": "ClickSelf",
-        "text": [
-            "进入主题"
-        ],
-        "roi": [
-            1006,
-            445,
-            246,
-            157
-        ],
-        "next": [
-            "Roguelike1@FromIntegratedStrategies",
             "Roguelike1@Begin"
         ]
     },
@@ -7461,7 +7465,7 @@
         ]
     },
     "Roguelike1@LastRewardConfirm": {
-        "template": "Roguelike1RecruitConfirm.png",
+        "template": "Roguelike1@RecruitConfirm.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7559,7 +7563,7 @@
     },
     "Roguelike1@RecruitMain": {
         "action": "ClickSelf",
-        "template": "Roguelike1Recruit.png",
+        "template": "Roguelike1@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -7576,7 +7580,7 @@
     },
     "Roguelike1@RecruitOther": {
         "action": "ClickSelf",
-        "template": "Roguelike1Recruit.png",
+        "template": "Roguelike1@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -7612,7 +7616,7 @@
         ]
     },
     "Roguelike1@ChooseOperFlag": {
-        "template": "Roguelike1ChooseOperConfirm.png",
+        "template": "Roguelike1@ChooseOperConfirm.png",
         "action": "DoNothing",
         "roi": [
             1016,
@@ -7781,7 +7785,7 @@
         ]
     },
     "Roguelike1@TraderRandomShoppingCancel": {
-        "template": "Roguelike1StageTraderInvestCancel.png",
+        "template": "Roguelike1@StageTraderInvestCancel.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8341,7 +8345,7 @@
         ]
     },
     "Roguelike1@StartAction": {
-        "template": "Roguelike1StartAction.png",
+        "template": "Roguelike1@StartAction.png",
         "Doc": "本任务注册了插件 RoguelikeSkillSelectionTaskPlugin、RoguelikeBattleTaskPlugin",
         "action": "ClickSelf",
         "roi": [
@@ -8613,7 +8617,7 @@
         ]
     },
     "Roguelike1@GetDropSelectRecruit": {
-        "template": "Roguelike1GetDropRecruit.png",
+        "template": "Roguelike1@GetDropRecruit.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8837,36 +8841,6 @@
         ],
         "next": [
             "Roguelike2@TodoEnter",
-            "Roguelike2@Begin"
-        ]
-    },
-    "Roguelike2@IntegratedStrategies": {
-        "action": "ClickSelf",
-        "roi": [
-            963,
-            599,
-            148,
-            121
-        ],
-        "next": [
-            "Roguelike2@IntegratedStrategies",
-            "Roguelike2@FromIntegratedStrategies"
-        ]
-    },
-    "Roguelike2@FromIntegratedStrategies": {
-        "algorithm": "OcrDetect",
-        "action": "ClickSelf",
-        "text": [
-            "进入主题"
-        ],
-        "roi": [
-            1006,
-            445,
-            246,
-            157
-        ],
-        "next": [
-            "Roguelike2@FromIntegratedStrategies",
             "Roguelike2@Begin"
         ]
     },
@@ -9100,7 +9074,7 @@
         ]
     },
     "Roguelike2@LastRewardConfirm": {
-        "template": "Roguelike1RecruitConfirm.png",
+        "template": "Roguelike2@RecruitConfirm.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -9223,7 +9197,7 @@
     },
     "Roguelike2@RecruitMain": {
         "action": "ClickSelf",
-        "template": "Roguelike1Recruit.png",
+        "template": "Roguelike2@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -9240,7 +9214,7 @@
     },
     "Roguelike2@RecruitOther": {
         "action": "ClickSelf",
-        "template": "Roguelike1Recruit.png",
+        "template": "Roguelike2@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -9278,7 +9252,7 @@
         ]
     },
     "Roguelike2@ChooseOperFlag": {
-        "template": "Roguelike1ChooseOperConfirm.png",
+        "template": "Roguelike2@ChooseOperConfirm.png",
         "action": "DoNothing",
         "roi": [
             1016,
@@ -9463,7 +9437,7 @@
         ]
     },
     "Roguelike2@TraderRandomShoppingCancel": {
-        "template": "Roguelike1StageTraderInvestCancel.png",
+        "template": "Roguelike2@StageTraderInvestCancel.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -9831,7 +9805,7 @@
     "Roguelike2@DiceConfirmThenAbandon": {
         "Doc": "骰子的确认按钮",
         "action": "ClickSelf",
-        "template": "Roguelike2DiceConfirm.png",
+        "template": "Roguelike2@DiceConfirm.png",
         "cache": false,
         "roi": [
             551,
@@ -10386,7 +10360,7 @@
         ]
     },
     "Roguelike2@StartAction": {
-        "template": "Roguelike1StartAction.png",
+        "template": "Roguelike2@StartAction.png",
         "Doc": "本任务注册了插件 RoguelikeSkillSelectionTaskPlugin、RoguelikeBattleTaskPlugin",
         "action": "ClickSelf",
         "roi": [
@@ -10767,7 +10741,7 @@
         ]
     },
     "Roguelike2@GetDropSelectRecruit": {
-        "template": "Roguelike1GetDropRecruit.png",
+        "template": "Roguelike2@GetDropRecruit.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
