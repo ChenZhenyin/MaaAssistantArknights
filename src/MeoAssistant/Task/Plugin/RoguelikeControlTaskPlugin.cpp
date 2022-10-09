@@ -1,5 +1,7 @@
 #include "RoguelikeControlTaskPlugin.h"
 
+#include "RuntimeStatus.h"
+
 bool asst::RoguelikeControlTaskPlugin::verify(AsstMsg msg, const json::value& details) const
 {
     if (msg != AsstMsg::SubTaskExtraInfo || details.get("subtask", std::string()) != "ProcessTask") {
@@ -10,9 +12,14 @@ bool asst::RoguelikeControlTaskPlugin::verify(AsstMsg msg, const json::value& de
         return false;
     }
 
+    auto roguelike_name_opt = m_status->get_properties("roguelike_name");
+    if (!roguelike_name_opt) {
+        return false;
+    }
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
     const std::string task = details.at("details").at("task").as_string();
-    if (task == "Roguelike1Start" || task == "Roguelike1StageTraderInvestConfirm" ||
-        task == "Roguelike1StageTraderInvestSystemFull") {
+    if (task == roguelike_name + "Start" || task == roguelike_name + "StageTraderInvestConfirm" ||
+        task == roguelike_name + "StageTraderInvestSystemFull") {
         return true;
     }
 

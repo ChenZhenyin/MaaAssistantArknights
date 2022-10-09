@@ -14,7 +14,12 @@ bool asst::RoguelikeShoppingTaskPlugin::verify(AsstMsg msg, const json::value& d
         return false;
     }
 
-    if (details.at("details").at("task").as_string() == "Roguelike1TraderRandomShopping") {
+    auto roguelike_name_opt = m_status->get_properties("roguelike_name");
+    if (!roguelike_name_opt) {
+        return false;
+    }
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    if (details.at("details").at("task").as_string() == roguelike_name + "TraderRandomShopping") {
         return true;
     }
     else {
@@ -27,7 +32,7 @@ bool asst::RoguelikeShoppingTaskPlugin::_run()
     LogTraceFunction;
 
     OcrWithFlagTemplImageAnalyzer analyzer;
-    analyzer.set_task_info("Roguelike1TraderShopping", "Roguelike1TraderShoppingOcr");
+    analyzer.set_task_info("RoguelikeTraderShopping", "RoguelikeTraderShoppingOcr");
 
     analyzer.set_image(m_ctrler->get_image());
     if (!analyzer.analyze()) {
@@ -151,7 +156,7 @@ bool asst::RoguelikeShoppingTaskPlugin::_run()
 
     if (!bought) {
         // 如果什么都没买，即使有商品，说明也是不需要买的，这里强制离开商店，后面让 ProcessTask 继续跑
-        return ProcessTask(*this, { "Roguelike1TraderShoppingOver" }).run();
+        return ProcessTask(*this, { "RoguelikeTraderShoppingOver" }).run();
     }
 
     return true;

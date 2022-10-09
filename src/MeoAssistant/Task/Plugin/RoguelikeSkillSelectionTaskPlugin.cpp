@@ -14,7 +14,12 @@ bool asst::RoguelikeSkillSelectionTaskPlugin::verify(AsstMsg msg, const json::va
         return false;
     }
 
-    if (details.at("details").at("task").as_string() == "Roguelike1StartAction") {
+    auto roguelike_name_opt = m_status->get_properties("roguelike_name");
+    if (!roguelike_name_opt) {
+        return false;
+    }
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    if (details.at("details").at("task").as_string() == roguelike_name + "StartAction") {
         return true;
     }
     else {
