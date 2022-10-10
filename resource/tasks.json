@@ -6969,7 +6969,7 @@
         ]
     },
     "RoguelikeTraderShopping": {
-        "template": "Roguelike1@Roguelike@TraderRandomShopping.png",
+        "template": "Roguelike@TraderRandomShopping.png",
         "templThreshold": 0.7,
         "roi": [
             480,
@@ -6994,7 +6994,7 @@
         "ocrReplace": []
     },
     "RoguelikeTraderShoppingOver": {
-        "template": "Roguelike1@Roguelike@StageTraderLeave.png",
+        "template": "Roguelike@StageTraderLeave.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7022,7 +7022,7 @@
         ]
     },
     "RoguelikeQuickFormationClearAndReselect-Confirm": {
-        "template": "Roguelike1@Roguelike@FormationConfirm.png",
+        "template": "Roguelike@FormationConfirm.png",
         "action": "ClickSelf",
         "roi": [
             1015,
@@ -7036,7 +7036,7 @@
         ]
     },
     "RoguelikeQuickFormationClearAndReselect-Formation": {
-        "template": "Roguelike1@Roguelike@QuickFormation.png",
+        "template": "Roguelike@QuickFormation.png",
         "action": "ClickSelf",
         "roi": [
             817,
@@ -7144,7 +7144,7 @@
     },
     "RoguelikeWaitBattleStart": {
         "Doc": "点了开始行动之后，可能会网络不好一直loading，用这个任务等一会",
-        "template": "Roguelike1@Roguelike@QuickFormation.png",
+        "template": "Roguelike@QuickFormation.png",
         "action": "DoNothing",
         "roi": [
             817,
@@ -7270,7 +7270,7 @@
             "Roguelike@Begin"
         ]
     },
-    "Roguelike1@Roguelike@TodoEnter": {},
+    "Phantom@Roguelike@TodoEnter": {},
     "Roguelike@ReturnTo": {
         "template": "Return.png",
         "templThreshold": 0.7,
@@ -7294,31 +7294,31 @@
             "Roguelike@FromStageSN"
         ]
     },
-    "Roguelike1@Roguelike@Begin": {
+    "Phantom@Roguelike@Begin": {
         "algorithm": "JustReturn",
         "next": [
-            "Roguelike1@Roguelike@ChooseDifficulty",
-            "Roguelike1@Roguelike@Start",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe",
-            "Roguelike1@Roguelike@ExitThenAbandon",
-            "Roguelike1@Roguelike@Abandon",
-            "Roguelike1@Roguelike@TodaysSupplies",
-            "Roguelike1@Roguelike@Main",
-            "Roguelike1@Roguelike@CloseAnno",
-            "Roguelike1@Roguelike@TodoEnter",
-            "Roguelike1@Roguelike@Continue",
-            "Roguelike1@Roguelike@ReturnTo",
-            "Roguelike1@Roguelike@ReturnToConfirm",
-            "Roguelike1@Roguelike@OfflineConfirm",
-            "Roguelike1@Roguelike@StartToWakeUp",
-            "Roguelike1@Roguelike@StartUpConnectingFlag",
-            "Roguelike1@Roguelike@FromStageSN"
+            "Phantom@Roguelike@ChooseDifficulty",
+            "Phantom@Roguelike@Start",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe",
+            "Phantom@Roguelike@ExitThenAbandon",
+            "Phantom@Roguelike@Abandon",
+            "Phantom@Roguelike@TodaysSupplies",
+            "Phantom@Roguelike@Main",
+            "Phantom@Roguelike@CloseAnno",
+            "Phantom@Roguelike@TodoEnter",
+            "Phantom@Roguelike@Continue",
+            "Phantom@Roguelike@ReturnTo",
+            "Phantom@Roguelike@ReturnToConfirm",
+            "Phantom@Roguelike@OfflineConfirm",
+            "Phantom@Roguelike@StartToWakeUp",
+            "Phantom@Roguelike@StartUpConnectingFlag",
+            "Phantom@Roguelike@FromStageSN"
         ]
     },
     "Roguelike@Continue": {
@@ -7338,8 +7338,10 @@
             "Roguelike@ExitThenAbandon"
         ]
     },
-    "Roguelike1@Roguelike@Continue": {},
+    "Phantom@Roguelike@Continue": {},
     "Roguelike@ChooseDifficulty": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             1061,
@@ -7351,7 +7353,11 @@
             "Roguelike@Start"
         ]
     },
+    "Phantom@Roguelike@ChooseDifficulty": {},
+    "Mizuki@Roguelike@ChooseDifficulty": {},
     "Roguelike@Start": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7367,6 +7373,8 @@
             "Roguelike@Start"
         ]
     },
+    "Phantom@Roguelike@Start": {},
+    "Mizuki@Roguelike@Start": {},
     "Roguelike@InitalDrop": {
         "Doc": "base_task",
         "Doc2": "古堡观光（简单模式）初始会有一个免费道具，点确认。月度小队也有，再多几次",
@@ -7383,7 +7391,7 @@
             "Roguelike@InitalDrop"
         ]
     },
-    "Roguelike1@Roguelike@InitalDrop": {},
+    "Phantom@Roguelike@InitalDrop": {},
     "Roguelike@DialogSkip": {
         "Doc": "月度小队，跳过对话",
         "action": "ClickSelf",
@@ -7399,8 +7407,6 @@
         ]
     },
     "Roguelike@DialogSkipConfirm": {
-        "Doc": "base_task",
-        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             725,
@@ -7409,16 +7415,17 @@
             169
         ]
     },
-    "Roguelike1@Roguelike@DialogSkipConfirm": {
+    "Phantom@Roguelike@DialogSkipConfirm": {
+        "template": "Roguelike@DialogSkipConfirm.png",
         "next": [
-            "Roguelike1@Roguelike@DialogSkip",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@DialogSkip",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
     "Roguelike@LastReward": {
@@ -7437,7 +7444,7 @@
             "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastReward": {},
+    "Phantom@Roguelike@LastReward": {},
     "Roguelike@LastReward2": {
         "Doc": "base_task",
         "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 5 源石锭",
@@ -7454,7 +7461,7 @@
             "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastReward2": {},
+    "Phantom@Roguelike@LastReward2": {},
     "Roguelike@LastReward3": {
         "Doc": "base_task",
         "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 3 目标生命",
@@ -7471,7 +7478,7 @@
             "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastReward3": {},
+    "Phantom@Roguelike@LastReward3": {},
     "Roguelike@LastRewardRand": {
         "Doc": "base_task",
         "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 问号",
@@ -7488,7 +7495,7 @@
             "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastRewardRand": {},
+    "Phantom@Roguelike@LastRewardRand": {},
     "Roguelike@LastRewardConfirm": {
         "Doc": "base_task",
         "template": "empty.png",
@@ -7505,8 +7512,8 @@
             "Roguelike@CloseCollection"
         ]
     },
-    "Roguelike1@Roguelike@LastRewardConfirm": {
-        "template": "Roguelike1@Roguelike@RecruitConfirm.png"
+    "Phantom@Roguelike@LastRewardConfirm": {
+        "template": "Phantom@Roguelike@RecruitConfirm.png"
     },
     "Roguelike@Recruit1": {
         "Doc": "base_task",
@@ -7523,7 +7530,7 @@
             "Roguelike@RecruitConfirm"
         ]
     },
-    "Roguelike1@Roguelike@Recruit1": {},
+    "Phantom@Roguelike@Recruit1": {},
     "Roguelike@RecruitConfirm": {
         "Doc": "base_task",
         "template": "empty.png",
@@ -7536,22 +7543,22 @@
             200
         ]
     },
-    "Roguelike1@Roguelike@RecruitConfirm": {
+    "Phantom@Roguelike@RecruitConfirm": {
         "next": [
-            "Roguelike1@Roguelike@LastReward",
-            "Roguelike1@Roguelike@LastReward2",
-            "Roguelike1@Roguelike@LastReward3",
-            "Roguelike1@Roguelike@LastRewardRand",
-            "Roguelike1@Roguelike@Team3",
-            "Roguelike1@Roguelike@CloseCollection",
-            "Roguelike1@Roguelike@DialogSkip",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@LastReward",
+            "Phantom@Roguelike@LastReward2",
+            "Phantom@Roguelike@LastReward3",
+            "Phantom@Roguelike@LastRewardRand",
+            "Phantom@Roguelike@Team3",
+            "Phantom@Roguelike@CloseCollection",
+            "Phantom@Roguelike@DialogSkip",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
     "Roguelike@CloseCollection": {
@@ -7566,13 +7573,13 @@
             139
         ]
     },
-    "Roguelike1@Roguelike@CloseCollection": {
+    "Phantom@Roguelike@CloseCollection": {
         "next": [
-            "Roguelike1@Roguelike@LastReward",
-            "Roguelike1@Roguelike@LastReward2",
-            "Roguelike1@Roguelike@LastReward3",
-            "Roguelike1@Roguelike@LastRewardRand",
-            "Roguelike1@Roguelike@Team3"
+            "Phantom@Roguelike@LastReward",
+            "Phantom@Roguelike@LastReward2",
+            "Phantom@Roguelike@LastReward3",
+            "Phantom@Roguelike@LastRewardRand",
+            "Phantom@Roguelike@Team3"
         ]
     },
     "Roguelike@Team3": {
@@ -7590,7 +7597,7 @@
             "Roguelike@TeamConfirm"
         ]
     },
-    "Roguelike1@Roguelike@Team3": {},
+    "Phantom@Roguelike@Team3": {},
     "Roguelike@TeamConfirm": {
         "Doc": "base_task",
         "template": "empty.png",
@@ -7606,7 +7613,7 @@
             "Roguelike@RecruitMain"
         ]
     },
-    "Roguelike1@Roguelike@TeamConfirm": {},
+    "Phantom@Roguelike@TeamConfirm": {},
     "Roguelike@RecruitMain": {
         "Doc": "base_task",
         "template": "empty.png",
@@ -7625,8 +7632,8 @@
         ],
         "rearDelay": 1000
     },
-    "Roguelike1@Roguelike@RecruitMain": {
-        "template": "Roguelike1@Roguelike@Recruit.png"
+    "Phantom@Roguelike@RecruitMain": {
+        "template": "Phantom@Roguelike@Recruit.png"
     },
     "Roguelike@RecruitOther": {
         "Doc": "base_task",
@@ -7646,8 +7653,8 @@
         ],
         "rearDelay": 1000
     },
-    "Roguelike1@Roguelike@RecruitOther": {
-        "template": "Roguelike1@Roguelike@Recruit.png"
+    "Phantom@Roguelike@RecruitOther": {
+        "template": "Phantom@Roguelike@Recruit.png"
     },
     "Roguelike@RecruitCloseGuide": {
         "Doc": "base_task",
@@ -7663,15 +7670,15 @@
             "Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@RecruitCloseGuide": {},
+    "Phantom@Roguelike@RecruitCloseGuide": {},
     "Roguelike@ChooseOper": {
         "Doc": "本任务注册了插件 RoguelikeRecruitTaskPlugin",
         "algorithm": "JustReturn",
         "action": "DoNothing"
     },
-    "Roguelike1@Roguelike@ChooseOper": {
+    "Phantom@Roguelike@ChooseOper": {
         "next": [
-            "Roguelike1@Roguelike@ChooseOperConfirm"
+            "Phantom@Roguelike@ChooseOperConfirm"
         ]
     },
     "Roguelike@ChooseOperFlag": {
@@ -7689,8 +7696,8 @@
             "Roguelike@RecruitCloseGuide"
         ]
     },
-    "Roguelike1@Roguelike@ChooseOperFlag": {
-        "template": "Roguelike1@Roguelike@ChooseOperConfirm.png"
+    "Phantom@Roguelike@ChooseOperFlag": {
+        "template": "Phantom@Roguelike@ChooseOperConfirm.png"
     },
     "Roguelike@ChooseOperConfirm": {
         "Doc": "base_task",
@@ -7711,7 +7718,7 @@
             "Roguelike@RecruitWithoutButton"
         ]
     },
-    "Roguelike1@Roguelike@ChooseOperConfirm": {},
+    "Phantom@Roguelike@ChooseOperConfirm": {},
     "Roguelike@RecruitSkip": {
         "template": "RecruitSkip.png",
         "action": "ClickSelf",
@@ -7741,15 +7748,15 @@
             60
         ]
     },
-    "Roguelike1@Roguelike@RecruitWithoutButton": {
+    "Phantom@Roguelike@RecruitWithoutButton": {
         "next": [
-            "Roguelike1@Roguelike@RecruitOther",
-            "Roguelike1@Roguelike@EnterAfterRecruit",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave",
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@RecruitWithoutButton"
+            "Phantom@Roguelike@RecruitOther",
+            "Phantom@Roguelike@EnterAfterRecruit",
+            "Phantom@Roguelike@TraderRandomShopping",
+            "Phantom@Roguelike@StageTraderLeave",
+            "Phantom@Roguelike@DropsFlag",
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@RecruitWithoutButton"
         ]
     },
     "Roguelike@EnterAfterRecruit": {
@@ -7764,15 +7771,15 @@
         ],
         "rearDelay": 3000
     },
-    "Roguelike1@Roguelike@EnterAfterRecruit": {
+    "Phantom@Roguelike@EnterAfterRecruit": {
         "next": [
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
     "Roguelike@StageTrader": {
@@ -7788,17 +7795,17 @@
             554
         ]
     },
-    "Roguelike1@Roguelike@StageTrader": {
+    "Phantom@Roguelike@StageTrader": {
         "templThreshold": 0.85,
         "next": [
-            "Roguelike1@Roguelike@StageTraderEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@StageTraderEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
     "Roguelike@StageTraderEnter": {
@@ -7819,9 +7826,9 @@
             "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderEnter": {},
+    "Phantom@Roguelike@StageTraderEnter": {},
     "Roguelike@TraderRandomShopping": {
-        "Doc": "该任务注册了 RoguelikeShoppingTaskPlugin，若是点完了仍在当前界面，说明没啥要买的，直接离开商店（next 里的 Roguelike1StageTraderLeave）",
+        "Doc": "该任务注册了 RoguelikeShoppingTaskPlugin，若是点完了仍在当前界面，说明没啥要买的，直接离开商店（next 里的 PhantomStageTraderLeave）",
         "action": "ClickSelf",
         "templThreshold": 0.7,
         "cache": false,
@@ -7878,9 +7885,6 @@
             "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@TraderRandomShoppingCancel": {
-        "template": "Roguelike1@Roguelike@StageTraderInvestCancel.png"
-    },
     "Roguelike@StageSafeHouse": {
         "Doc": "base_task",
         "Doc2": "安全的角落",
@@ -7894,20 +7898,22 @@
             554
         ]
     },
-    "Roguelike1@Roguelike@StageSafeHouse": {
+    "Phantom@Roguelike@StageSafeHouse": {
         "templThreshold": 0.85,
         "next": [
-            "Roguelike1@Roguelike@StageSafeHouseEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@StageSafeHouseEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageSafeHouseEnter": {
+    "Roguelike@StageSafeHouseEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7917,14 +7923,15 @@
             221
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterClickToLeave"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@StageEncounterFree",
+            "Roguelike@StageEncounterLeave",
+            "Roguelike@StageEncounterUnknown",
+            "Roguelike@StageEncounterClickToLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestSystem": {
+    "Phantom@Roguelike@StageSafeHouseEnter": {},
+    "Roguelike@StageTraderInvestSystem": {
         "templThreshold": 0.75,
         "action": "ClickSelf",
         "roi": [
@@ -7934,16 +7941,16 @@
             216
         ],
         "exceededNext": [
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave"
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestSystemEnter",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@StageTraderInvestSystemEnter",
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestSystemEnter": {
+    "Roguelike@StageTraderInvestSystemEnter": {
         "action": "ClickSelf",
         "roi": [
             417,
@@ -7952,12 +7959,12 @@
             247
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestSystemError",
-            "Roguelike1@Roguelike@StageTraderInvestConfirm",
-            "Roguelike1@Roguelike@StageTraderInvestCancel"
+            "Roguelike@StageTraderInvestSystemError",
+            "Roguelike@StageTraderInvestConfirm",
+            "Roguelike@StageTraderInvestCancel"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestConfirm": {
+    "Roguelike@StageTraderInvestConfirm": {
         "action": "ClickSelf",
         "roi": [
             852,
@@ -7967,13 +7974,13 @@
         ],
         "rearDelay": 500,
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestSystemError",
-            "Roguelike1@Roguelike@StageTraderInvestSystemFull",
-            "Roguelike1@Roguelike@StageTraderInvestConfirm",
-            "Roguelike1@Roguelike@StageTraderInvestCancel"
+            "Roguelike@StageTraderInvestSystemError",
+            "Roguelike@StageTraderInvestSystemFull",
+            "Roguelike@StageTraderInvestConfirm",
+            "Roguelike@StageTraderInvestCancel"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestSystemError": {
+    "Roguelike@StageTraderInvestSystemError": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7983,14 +7990,14 @@
             240
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestCancel"
+            "Roguelike@StageTraderInvestCancel"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestSystemFull": {
+    "Roguelike@StageTraderInvestSystemFull": {
         "algorithm": "OcrDetect",
         "cache": false,
         "reduceOtherTimes": [
-            "Roguelike1@Roguelike@StageTraderInvestConfirm"
+            "Roguelike@StageTraderInvestConfirm"
         ],
         "text": [
             "当前储备余额已达上限",
@@ -8004,10 +8011,11 @@
             289
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestCancel"
+            "Roguelike@StageTraderInvestCancel"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestCancel": {
+    "Phantom@Roguelike@StageTraderInvestSystemFull": {},
+    "Roguelike@StageTraderInvestCancel": {
         "action": "ClickSelf",
         "roi": [
             507,
@@ -8016,13 +8024,13 @@
             149
         ],
         "exceededNext": [
-            "Roguelike1@Roguelike@ExitThenAbandon"
+            "Roguelike@ExitThenAbandon"
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestSystemLeave"
+            "Roguelike@StageTraderInvestSystemLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderInvestSystemLeave": {
+    "Roguelike@StageTraderInvestSystemLeave": {
         "action": "ClickSelf",
         "roi": [
             682,
@@ -8031,11 +8039,11 @@
             143
         ],
         "next": [
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderLeave": {
+    "Roguelike@StageTraderLeave": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8045,11 +8053,11 @@
             204
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderLeaveConfirm",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@StageTraderLeaveConfirm",
+            "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@ExitThenAbandon": {
+    "Roguelike@ExitThenAbandon": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8057,13 +8065,18 @@
             0,
             320,
             160
-        ],
-        "next": [
-            "Roguelike1@Roguelike@ExitThenAbandon",
-            "Roguelike1@Roguelike@Abandon"
         ]
     },
-    "Roguelike1@Roguelike@Abandon": {
+    "Phantom@Roguelike@ExitThenAbandon": {
+        "template": "Roguelike@ExitThenAbandon.png",
+        "next": [
+            "Phantom@Roguelike@ExitThenAbandon",
+            "Phantom@Roguelike@Abandon"
+        ]
+    },
+    "Roguelike@Abandon": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             1076,
@@ -8072,11 +8085,12 @@
             179
         ],
         "next": [
-            "Roguelike1@Roguelike@AbandonConfirm",
-            "Roguelike1@Roguelike@Abandon"
+            "Roguelike@AbandonConfirm",
+            "Roguelike@Abandon"
         ]
     },
-    "Roguelike1@Roguelike@AbandonConfirm": {
+    "Phantom@Roguelike@Abandon": {},
+    "Roguelike@AbandonConfirm": {
         "action": "ClickSelf",
         "roi": [
             720,
@@ -8085,11 +8099,11 @@
             168
         ],
         "next": [
-            "Roguelike1@Roguelike@MissionFailedFlag2",
-            "Roguelike1@Roguelike@Start"
+            "Roguelike@MissionFailedFlag2",
+            "Roguelike@Start"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderLeaveConfirm": {
+    "Roguelike@StageTraderLeaveConfirm": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8097,22 +8111,27 @@
             447,
             295,
             203
-        ],
+        ]
+    },
+    "Phantom@Roguelike@StageTraderLeaveConfirm": {
+        "template": "Roguelike@StageTraderLeaveConfirm.png",
         "exceededNext": [
-            "Roguelike1@Roguelike@ExitThenAbandon"
+            "Phantom@Roguelike@ExitThenAbandon"
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounter": {
-        "Doc": "不期而遇（随机奖励）",
+    "Roguelike@StageEncounter": {
+        "Doc": "base_task",
+        "Doc2": "不期而遇（随机奖励）",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8120,21 +8139,25 @@
             53,
             1280,
             554
-        ],
-        "templThreshold": 0.85,
-        "next": [
-            "Roguelike1@Roguelike@StageEncounterEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageBoons": {
-        "Doc": "古堡馈赠（随机奖励）",
+    "Phantom@Roguelike@StageEncounter": {
+        "templThreshold": 0.85,
+        "next": [
+            "Phantom@Roguelike@StageEncounterEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
+        ]
+    },
+    "Roguelike@StageBoons": {
+        "Doc": "base_task",
+        "Doc2": "古堡馈赠（随机奖励）",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8142,20 +8165,24 @@
             53,
             1280,
             554
-        ],
-        "templThreshold": 0.85,
-        "next": [
-            "Roguelike1@Roguelike@StageEncounterEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterEnter": {
+    "Phantom@Roguelike@StageBoons": {
+        "templThreshold": 0.85,
+        "next": [
+            "Phantom@Roguelike@StageEncounterEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
+        ]
+    },
+    "Roguelike@StageEncounterEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8165,14 +8192,17 @@
             221
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterClickToLeave"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@StageEncounterFree",
+            "Roguelike@StageEncounterLeave",
+            "Roguelike@StageEncounterUnknown",
+            "Roguelike@StageEncounterClickToLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterFree": {
+    "Phantom@Roguelike@StageEncounterEnter": {},
+    "Roguelike@StageEncounterFree": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8181,17 +8211,21 @@
             180,
             700
         ],
-        "preDelay": 500,
+        "preDelay": 500
+    },
+    "Phantom@Roguelike@StageEncounterFree": {
         "templThreshold": 0.99,
         "next": [
-            "Roguelike1@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Phantom@Roguelike@StageEncounterLeaveConfirm",
+            "Phantom@Roguelike@StageEncounterLeave",
+            "Phantom@Roguelike@StageEncounterUnknown",
+            "Phantom@Roguelike@StageEncounterFree",
+            "Phantom@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterLeave": {
+    "Roguelike@StageEncounterLeave": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8200,17 +8234,21 @@
             180,
             700
         ],
-        "preDelay": 500,
+        "preDelay": 500
+    },
+    "Phantom@Roguelike@StageEncounterLeave": {
         "templThreshold": 0.97,
         "next": [
-            "Roguelike1@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Phantom@Roguelike@StageEncounterLeaveConfirm",
+            "Phantom@Roguelike@StageEncounterFree",
+            "Phantom@Roguelike@StageEncounterUnknown",
+            "Phantom@Roguelike@StageEncounterLeave",
+            "Phantom@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterUnknown": {
+    "Roguelike@StageEncounterUnknown": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8219,17 +8257,21 @@
             320,
             580
         ],
+        "preDelay": 1500
+    },
+    "Phantom@Roguelike@StageEncounterUnknown": {
         "templThreshold": 0.91,
-        "preDelay": 1500,
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown"
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@StageEncounterLeaveConfirm",
+            "Phantom@Roguelike@StageEncounterFree",
+            "Phantom@Roguelike@StageEncounterLeave",
+            "Phantom@Roguelike@StageEncounterUnknown"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterLeaveConfirm": {
+    "Roguelike@StageEncounterLeaveConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8240,18 +8282,21 @@
         ],
         "rearDelay": 1000,
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterSpecialClose",
-            "Roguelike1@Roguelike@StageCambatDpsEnter",
-            "Roguelike1@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@StageEncounterFree",
+            "Roguelike@StageEncounterLeave",
+            "Roguelike@StageEncounterUnknown",
+            "Roguelike@StageEncounterSpecialClose",
+            "Roguelike@StageCambatDpsEnter",
+            "Roguelike@StageEmergencyDpsEnter",
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterSpecialClose": {
-        "Doc": "关掉“大锁”",
+    "Phantom@Roguelike@StageEncounterLeaveConfirm": {},
+    "Roguelike@StageEncounterSpecialClose": {
+        "Doc": "base_task",
+        "Doc2": "关掉“大锁”",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             570,
@@ -8260,11 +8305,12 @@
             138
         ],
         "next": [
-            "Roguelike1@Roguelike@StageEncounterSpecialClose",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@StageEncounterSpecialClose",
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterGiveUpRecruitConfirm": {
+    "Phantom@Roguelike@StageEncounterSpecialClose": {},
+    "Roguelike@StageEncounterGiveUpRecruitConfirm": {
         "action": "ClickSelf",
         "roi": [
             613,
@@ -8273,13 +8319,13 @@
             171
         ],
         "next": [
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave",
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave",
+            "Roguelike@DropsFlag",
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@StageEncounterClickToLeave": {
+    "Roguelike@StageEncounterClickToLeave": {
         "algorithm": "JustReturn",
         "action": "ClickRect",
         "specificRect": [
@@ -8289,15 +8335,17 @@
             50
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterClickToLeave"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@StageEncounterFree",
+            "Roguelike@StageEncounterLeave",
+            "Roguelike@StageEncounterUnknown",
+            "Roguelike@StageEncounterClickToLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageCambatDps": {
-        "Doc": "普通作战",
+    "Roguelike@StageCambatDps": {
+        "Doc": "base_task",
+        "Doc2": "普通作战",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8305,21 +8353,25 @@
             53,
             1280,
             554
-        ],
-        "next": [
-            "Roguelike1@Roguelike@StageCambatDpsEnter",
-            "Roguelike1@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
-        ],
-        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错"
+        ]
     },
-    "Roguelike1@Roguelike@StageCambatDpsEnter": {
+    "Phantom@Roguelike@StageCambatDps": {
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
+        "next": [
+            "Phantom@Roguelike@StageCambatDpsEnter",
+            "Phantom@Roguelike@StageEmergencyDpsEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
+        ]
+    },
+    "Roguelike@StageCambatDpsEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8329,11 +8381,14 @@
             223
         ],
         "next": [
-            "Roguelike1@Roguelike@QuickFormation"
+            "Roguelike@QuickFormation"
         ]
     },
-    "Roguelike1@Roguelike@StageEmergencyDps": {
-        "Doc": "紧急作战",
+    "Phantom@Roguelike@StageCambatDpsEnter": {},
+    "Roguelike@StageEmergencyDps": {
+        "Doc": "base_task",
+        "Doc2": "紧急作战",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8341,21 +8396,25 @@
             53,
             1280,
             554
-        ],
-        "next": [
-            "Roguelike1@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike1@Roguelike@StageCambatDpsEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
-        ],
-        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错"
+        ]
     },
-    "Roguelike1@Roguelike@StageEmergencyDpsEnter": {
+    "Phantom@Roguelike@StageEmergencyDps": {
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
+        "next": [
+            "Phantom@Roguelike@StageEmergencyDpsEnter",
+            "Phantom@Roguelike@StageCambatDpsEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
+        ]
+    },
+    "Roguelike@StageEmergencyDpsEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8365,11 +8424,14 @@
             223
         ],
         "next": [
-            "Roguelike1@Roguelike@QuickFormation"
+            "Roguelike@QuickFormation"
         ]
     },
-    "Roguelike1@Roguelike@StageDreadfulFoe": {
-        "Doc": "险路恶敌（boss关卡）",
+    "Phantom@Roguelike@StageEmergencyDpsEnter": {},
+    "Phantom@Roguelike@StageDreadfulFoe": {
+        "Doc": "base_task",
+        "Doc2": "险路恶敌（boss关卡）",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8377,22 +8439,26 @@
             53,
             1280,
             554
-        ],
-        "next": [
-            "Roguelike1@Roguelike@StageDreadfulFoeEnter",
-            "Roguelike1@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike1@Roguelike@StageCambatDpsEnter",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe"
-        ],
-        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错"
+        ]
     },
-    "Roguelike1@Roguelike@StageDreadfulFoeEnter": {
+    "Phantom@Roguelike@StageDreadfulFoe": {
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
+        "next": [
+            "Phantom@Roguelike@StageDreadfulFoeEnter",
+            "Phantom@Roguelike@StageEmergencyDpsEnter",
+            "Phantom@Roguelike@StageCambatDpsEnter",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe"
+        ]
+    },
+    "Roguelike@StageDreadfulFoeEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8402,10 +8468,11 @@
             223
         ],
         "next": [
-            "Roguelike1@Roguelike@QuickFormation"
+            "Roguelike@QuickFormation"
         ]
     },
-    "Roguelike1@Roguelike@QuickFormation": {
+    "Phantom@Roguelike@StageDreadfulFoeEnter": {},
+    "Roguelike@QuickFormation": {
         "Doc": "本任务注册了插件 RoguelikeFormationTaskPlugin",
         "action": "ClickSelf",
         "roi": [
@@ -8415,11 +8482,11 @@
             146
         ],
         "next": [
-            "Roguelike1@Roguelike@FormationConfirm"
+            "Roguelike@FormationConfirm"
         ],
         "rearDelay": 2000
     },
-    "Roguelike1@Roguelike@FormationConfirm": {
+    "Roguelike@FormationConfirm": {
         "action": "ClickSelf",
         "roi": [
             1015,
@@ -8428,11 +8495,10 @@
             119
         ],
         "next": [
-            "Roguelike1@Roguelike@StartAction"
+            "Roguelike@StartAction"
         ]
     },
-    "Roguelike1@Roguelike@StartAction": {
-        "template": "Roguelike1@Roguelike@StartAction.png",
+    "Roguelike@StartAction": {
         "Doc": "本任务注册了插件 RoguelikeSkillSelectionTaskPlugin、RoguelikeBattleTaskPlugin",
         "action": "ClickSelf",
         "roi": [
@@ -8442,16 +8508,18 @@
             127
         ],
         "next": [
-            "Roguelike1@Roguelike@InBattleFlag",
-            "Roguelike1@Roguelike@MissionCompletedFlag",
-            "Roguelike1@Roguelike@MissionFailedFlag",
-            "Roguelike1@Roguelike@MissionFailedFlag2",
-            "Roguelike1@Roguelike@GamePassSkip1",
-            "Roguelike1@Roguelike@GamePassTheEndConfirm",
-            "Roguelike1@Roguelike@GamePass"
+            "Roguelike@InBattleFlag",
+            "Roguelike@MissionCompletedFlag",
+            "Roguelike@MissionFailedFlag",
+            "Roguelike@MissionFailedFlag2",
+            "Roguelike@GamePassSkip1",
+            "Roguelike@GamePassTheEndConfirm",
+            "Roguelike@GamePass"
         ]
     },
-    "Roguelike1@Roguelike@GamePassSkip1": {
+    "Roguelike@GamePassSkip1": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             1090,
@@ -8460,24 +8528,29 @@
             144
         ],
         "next": [
-            "Roguelike1@Roguelike@GamePassSkip1Confirm"
+            "Roguelike@GamePassSkip1Confirm"
         ]
     },
-    "Roguelike1@Roguelike@GamePassSkip1Confirm": {
+    "Phantom@Roguelike@GamePassSkip1": {},
+    "Roguelike@GamePassSkip1Confirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             715,
             282,
             171,
             155
-        ],
-        "next": [
-            "Roguelike1@Roguelike@GamePassSkip2",
-            "Roguelike1@Roguelike@GamePassTheEndConfirm",
-            "Roguelike1@Roguelike@GamePass"
         ]
     },
-    "Roguelike1@Roguelike@GamePassSkip2": {
+    "Phantom@Roguelike@GamePassSkip1Confirm": {
+        "next": [
+            "Phantom@Roguelike@GamePassSkip2",
+            "Phantom@Roguelike@GamePassTheEndConfirm",
+            "Phantom@Roguelike@GamePass"
+        ]
+    },
+    "Roguelike@GamePassSkip2": {
         "action": "ClickSelf",
         "roi": [
             1109,
@@ -8486,11 +8559,11 @@
             138
         ],
         "next": [
-            "Roguelike1@Roguelike@GamePassTheEndConfirm",
-            "Roguelike1@Roguelike@GamePass"
+            "Roguelike@GamePassTheEndConfirm",
+            "Roguelike@GamePass"
         ]
     },
-    "Roguelike1@Roguelike@GamePassTheEndConfirm": {
+    "Roguelike@GamePassTheEndConfirm": {
         "action": "ClickSelf",
         "roi": [
             554,
@@ -8499,10 +8572,12 @@
             161
         ],
         "next": [
-            "Roguelike1@Roguelike@GamePass"
+            "Roguelike@GamePass"
         ]
     },
-    "Roguelike1@Roguelike@GamePass": {
+    "Roguelike@GamePass": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "cache": false,
         "roi": [
             400,
@@ -8511,10 +8586,11 @@
             300
         ],
         "next": [
-            "Roguelike1@Roguelike@ClickToStartPoint"
+            "Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike1@Roguelike@InBattleFlag": {
+    "Phantom@Roguelike@GamePass": {},
+    "Roguelike@InBattleFlag": {
         "template": "BattleOfficiallyBegin.png",
         "roi": [
             1165,
@@ -8529,13 +8605,13 @@
         "action": "DoNothing",
         "rearDelay": 5000,
         "next": [
-            "Roguelike1@Roguelike@InBattleFlag",
-            "Roguelike1@Roguelike@MissionCompletedFlag",
-            "Roguelike1@Roguelike@MissionFailedFlag",
-            "Roguelike1@Roguelike@MissionFailedFlag2"
+            "Roguelike@InBattleFlag",
+            "Roguelike@MissionCompletedFlag",
+            "Roguelike@MissionFailedFlag",
+            "Roguelike@MissionFailedFlag2"
         ]
     },
-    "Roguelike1@Roguelike@MissionCompletedFlag": {
+    "Roguelike@MissionCompletedFlag": {
         "roi": [
             0,
             0,
@@ -8543,10 +8619,10 @@
             143
         ],
         "next": [
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@ClickToDrops": {
+    "Roguelike@ClickToDrops": {
         "algorithm": "JustReturn",
         "action": "ClickRect",
         "specificRect": [
@@ -8555,63 +8631,70 @@
             50,
             50
         ],
-        "rearDelay": 500,
+        "rearDelay": 500
+    },
+    "Phantom@Roguelike@ClickToDrops": {
         "next": [
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterSpecialClose",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave",
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@TodaysSupplies",
-            "Roguelike1@Roguelike@Main",
-            "Roguelike1@Roguelike@CloseAnno",
-            "Roguelike1@Roguelike@OfflineConfirm",
-            "Roguelike1@Roguelike@StartToWakeUp",
-            "Roguelike1@Roguelike@StartUpConnectingFlag",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe",
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@StageEncounterSpecialClose",
+            "Phantom@Roguelike@TraderRandomShopping",
+            "Phantom@Roguelike@StageTraderLeave",
+            "Phantom@Roguelike@DropsFlag",
+            "Phantom@Roguelike@TodaysSupplies",
+            "Phantom@Roguelike@Main",
+            "Phantom@Roguelike@CloseAnno",
+            "Phantom@Roguelike@OfflineConfirm",
+            "Phantom@Roguelike@StartToWakeUp",
+            "Phantom@Roguelike@StartUpConnectingFlag",
+            "Phantom@Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@DropsFlag": {
+    "Roguelike@DropsFlag": {
         "roi": [
             875,
             601,
             152,
             119
-        ],
-        "next": [
-            "Roguelike1@Roguelike@GetDrop1",
-            "Roguelike1@Roguelike@GetDrop2",
-            "Roguelike1@Roguelike@GetDrop3",
-            "Roguelike1@Roguelike@GetDropSelect",
-            "Roguelike1@Roguelike@GetDropRecruit",
-            "Roguelike1@Roguelike@GetDropCompleted",
-            "Roguelike1@Roguelike@GetDropLeave",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageEncounterFree",
-            "Roguelike1@Roguelike@StageEncounterLeave",
-            "Roguelike1@Roguelike@StageEncounterUnknown",
-            "Roguelike1@Roguelike@StageEncounterSpecialClose",
-            "Roguelike1@Roguelike@EnterAfterRecruit",
-            "Roguelike1@Roguelike@StageTraderLeave",
-            "Roguelike1@Roguelike@DialogSkip"
         ]
     },
-    "Roguelike1@Roguelike@GetDrop1": {
-        "Doc": "源石锭，绿色的“拿走”按钮",
+    "Phantom@Roguelike@DropsFlag": {
+        "template": "Roguelike@DropsFlag.png",
+        "next": [
+            "Phantom@Roguelike@GetDrop1",
+            "Phantom@Roguelike@GetDrop2",
+            "Phantom@Roguelike@GetDrop3",
+            "Phantom@Roguelike@GetDropSelect",
+            "Phantom@Roguelike@GetDropRecruit",
+            "Phantom@Roguelike@GetDropCompleted",
+            "Phantom@Roguelike@GetDropLeave",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe",
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@StageEncounterFree",
+            "Phantom@Roguelike@StageEncounterLeave",
+            "Phantom@Roguelike@StageEncounterUnknown",
+            "Phantom@Roguelike@StageEncounterSpecialClose",
+            "Phantom@Roguelike@EnterAfterRecruit",
+            "Phantom@Roguelike@StageTraderLeave",
+            "Phantom@Roguelike@DialogSkip"
+        ]
+    },
+    "Roguelike@GetDrop1": {
+        "Doc": "base_task",
+        "Doc2": "源石锭，绿色的“拿走”按钮",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8623,12 +8706,15 @@
         "templThreshold": 0.85,
         "rearDelay": 1000,
         "next": [
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Roguelike@DropsFlag",
+            "Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@GetDrop2": {
-        "Doc": "希望，黄色的“拿走”按钮",
+    "Phantom@Roguelike@GetDrop1": {},
+    "Roguelike@GetDrop2": {
+        "Doc": "base_task",
+        "Doc2": "希望，黄色的“拿走”按钮",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8640,13 +8726,16 @@
         "templThreshold": 0.85,
         "rearDelay": 1000,
         "next": [
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@DropsFlag",
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@GetDrop3": {
-        "Doc": "未知的剧目，黄色的“翻开”按钮",
+    "Phantom@Roguelike@GetDrop2": {},
+    "Roguelike@GetDrop3": {
+        "Doc": "base_task",
+        "Doc2": "未知的剧目，黄色的“翻开”按钮",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8658,12 +8747,15 @@
         "rearDelay": 1000,
         "templThreshold": 0.85,
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@GetDropRecruit": {
-        "Doc": "招募券，白色的“招募”按钮",
+    "Phantom@Roguelike@GetDrop3": {},
+    "Roguelike@GetDropRecruit": {
+        "Doc": "base_task",
+        "Doc2": "招募券，白色的“招募”按钮",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8672,20 +8764,24 @@
             1280,
             157
         ],
-        "rearDelay": 1000,
+        "rearDelay": 1000
+    },
+    "Phantom@Roguelike@GetDropRecruit": {
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@GetDrop1",
-            "Roguelike1@Roguelike@GetDrop2",
-            "Roguelike1@Roguelike@GetDrop3",
-            "Roguelike1@Roguelike@GetDropSelect",
-            "Roguelike1@Roguelike@GetDropRecruit",
-            "Roguelike1@Roguelike@GetDropCompleted",
-            "Roguelike1@Roguelike@GetDropLeave"
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@GetDrop1",
+            "Phantom@Roguelike@GetDrop2",
+            "Phantom@Roguelike@GetDrop3",
+            "Phantom@Roguelike@GetDropSelect",
+            "Phantom@Roguelike@GetDropRecruit",
+            "Phantom@Roguelike@GetDropCompleted",
+            "Phantom@Roguelike@GetDropLeave"
         ]
     },
-    "Roguelike1@Roguelike@GetDropSelect": {
-        "Doc": "“选择”按钮，有可能是招募二选一，也有收藏品二选一",
+    "Roguelike@GetDropSelect": {
+        "Doc": "base_task",
+        "Doc2": "“选择”按钮，有可能是招募二选一，也有收藏品二选一",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8696,15 +8792,17 @@
         ],
         "rearDelay": 2000,
         "next": [
-            "Roguelike1@Roguelike@GetDropSelectRecruit",
-            "Roguelike1@Roguelike@GetDropSelectReward",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@GetDropCompleted",
-            "Roguelike1@Roguelike@GetDropSelect"
+            "Roguelike@GetDropSelectRecruit",
+            "Roguelike@GetDropSelectReward",
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@GetDropCompleted",
+            "Roguelike@GetDropSelect"
         ]
     },
-    "Roguelike1@Roguelike@GetDropSelectRecruit": {
-        "template": "Roguelike1@Roguelike@GetDropRecruit.png",
+    "Phantom@Roguelike@GetDropSelect": {},
+    "Roguelike@GetDropSelectRecruit": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8716,11 +8814,16 @@
         "rearDelay": 1000,
         "templThreshold": 0.85,
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@GetDropSelectRecruit"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@GetDropSelectRecruit"
         ]
     },
-    "Roguelike1@Roguelike@GetDropSelectReward": {
+    "Phantom@Roguelike@GetDropSelectRecruit": {
+        "template": "Phantom@Roguelike@GetDropRecruit.png"
+    },
+    "Roguelike@GetDropSelectReward": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "cache": false,
         "action": "ClickSelf",
         "roi": [
@@ -8731,12 +8834,15 @@
         ],
         "rearDelay": 1000,
         "next": [
-            "Roguelike1@Roguelike@ClickToDrops",
-            "Roguelike1@Roguelike@GetDropSelectReward",
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Roguelike@ClickToDrops",
+            "Roguelike@GetDropSelectReward",
+            "Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@GetDropCompleted": {
+    "Phantom@Roguelike@GetDropSelectReward": {},
+    "Roguelike@GetDropCompleted": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickRect",
         "specificRect": [
             600,
@@ -8750,19 +8856,23 @@
             302,
             289
         ],
-        "rearDelay": 3000,
+        "rearDelay": 3000
+    },
+    "Phantom@Roguelike@GetDropCompleted": {
         "next": [
-            "Roguelike1@Roguelike@GetDrop1",
-            "Roguelike1@Roguelike@GetDrop2",
-            "Roguelike1@Roguelike@GetDrop3",
-            "Roguelike1@Roguelike@GetDropSelect",
-            "Roguelike1@Roguelike@GetDropRecruit",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@ClickToDrops"
+            "Phantom@Roguelike@GetDrop1",
+            "Phantom@Roguelike@GetDrop2",
+            "Phantom@Roguelike@GetDrop3",
+            "Phantom@Roguelike@GetDropSelect",
+            "Phantom@Roguelike@GetDropRecruit",
+            "Phantom@Roguelike@ChooseOperFlag",
+            "Phantom@Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike1@Roguelike@GetDropLeave": {
-        "Doc": "不要了，走了（",
+    "Roguelike@GetDropLeave": {
+        "Doc": "base_task",
+        "Doc2": "不要了，走了（",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8772,12 +8882,13 @@
             296
         ],
         "next": [
-            "Roguelike1@Roguelike@GetDropLeaveConfirm",
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Roguelike@GetDropLeaveConfirm",
+            "Roguelike@DropsFlag",
+            "Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@GetDropLeaveConfirm": {
+    "Phantom@Roguelike@GetDropLeave": {},
+    "Roguelike@GetDropLeaveConfirm": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8787,10 +8898,14 @@
             138
         ],
         "next": [
-            "Roguelike1@Roguelike@DropsFlag"
+            "Roguelike@DropsFlag"
         ]
     },
-    "Roguelike1@Roguelike@MissionFailedFlag": {
+    "Roguelike@MissionFailedFlag": {
+        "Doc": "base_task",
+        "template": "empty.png"
+    },
+    "Phantom@Roguelike@MissionFailedFlag": {
         "roi": [
             504,
             163,
@@ -8798,17 +8913,19 @@
             267
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe",
-            "Roguelike1@Roguelike@ClickToStartPoint"
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe",
+            "Phantom@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike1@Roguelike@MissionFailedFlag2": {
+    "Roguelike@MissionFailedFlag2": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "cache": false,
         "roi": [
             473,
@@ -8817,10 +8934,11 @@
             194
         ],
         "next": [
-            "Roguelike1@Roguelike@ClickToStartPoint"
+            "Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike1@Roguelike@ClickToStartPoint": {
+    "Phantom@Roguelike@MissionFailedFlag2": {},
+    "Roguelike@ClickToStartPoint": {
         "algorithm": "JustReturn",
         "action": "ClickRect",
         "specificRect": [
@@ -8829,96 +8947,99 @@
             50,
             50
         ],
-        "rearDelay": 1000,
+        "rearDelay": 1000
+    },
+    "Phantom@Roguelike@ClickToStartPoint": {
         "next": [
-            "Roguelike1@Roguelike@Start",
-            "Roguelike1@Roguelike@StageTrader",
-            "Roguelike1@Roguelike@StageSafeHouse",
-            "Roguelike1@Roguelike@StageEncounter",
-            "Roguelike1@Roguelike@StageBoons",
-            "Roguelike1@Roguelike@StageCambatDps",
-            "Roguelike1@Roguelike@StageEmergencyDps",
-            "Roguelike1@Roguelike@StageDreadfulFoe",
-            "Roguelike1@Roguelike@GamePass",
-            "Roguelike1@Roguelike@TodaysSupplies",
-            "Roguelike1@Roguelike@Main",
-            "Roguelike1@Roguelike@CloseAnno",
-            "Roguelike1@Roguelike@TodoEnter",
-            "Roguelike1@Roguelike@Continue",
-            "Roguelike1@Roguelike@ReturnTo",
-            "Roguelike1@Roguelike@ReturnToConfirm",
-            "Roguelike1@Roguelike@OfflineConfirm",
-            "Roguelike1@Roguelike@StartToWakeUp",
-            "Roguelike1@Roguelike@StartUpConnectingFlag",
-            "Roguelike1@Roguelike@ClickToStartPoint"
+            "Phantom@Roguelike@Start",
+            "Phantom@Roguelike@StageTrader",
+            "Phantom@Roguelike@StageSafeHouse",
+            "Phantom@Roguelike@StageEncounter",
+            "Phantom@Roguelike@StageBoons",
+            "Phantom@Roguelike@StageCambatDps",
+            "Phantom@Roguelike@StageEmergencyDps",
+            "Phantom@Roguelike@StageDreadfulFoe",
+            "Phantom@Roguelike@GamePass",
+            "Phantom@Roguelike@TodaysSupplies",
+            "Phantom@Roguelike@Main",
+            "Phantom@Roguelike@CloseAnno",
+            "Phantom@Roguelike@TodoEnter",
+            "Phantom@Roguelike@Continue",
+            "Phantom@Roguelike@ReturnTo",
+            "Phantom@Roguelike@ReturnToConfirm",
+            "Phantom@Roguelike@OfflineConfirm",
+            "Phantom@Roguelike@StartToWakeUp",
+            "Phantom@Roguelike@StartUpConnectingFlag",
+            "Phantom@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike2@Roguelike@TodoEnter": {},
-    "Roguelike2@Roguelike@Begin": {
+    "Mizuki@Roguelike@TodoEnter": {},
+    "Mizuki@Roguelike@Begin": {
         "algorithm": "JustReturn",
         "next": [
-            "Roguelike2@Roguelike@ChooseDifficulty",
-            "Roguelike2@Roguelike@Start",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@CloseEvent",
-            "Roguelike2@Roguelike@NextLevel",
-            "Roguelike2@Roguelike@ExitThenAbandon",
-            "Roguelike2@Roguelike@Abandon",
-            "Roguelike2@Roguelike@TodaysSupplies",
-            "Roguelike2@Roguelike@Main",
-            "Roguelike2@Roguelike@CloseAnno",
-            "Roguelike2@Roguelike@TodoEnter",
-            "Roguelike2@Roguelike@Continue",
-            "Roguelike2@Roguelike@ReturnTo",
-            "Roguelike2@Roguelike@ReturnToConfirm",
-            "Roguelike2@Roguelike@OfflineConfirm",
-            "Roguelike2@Roguelike@StartToWakeUp",
-            "Roguelike2@Roguelike@StartUpConnectingFlag",
-            "Roguelike2@Roguelike@FromStageSN"
+            "Mizuki@Roguelike@ChooseDifficulty",
+            "Mizuki@Roguelike@Start",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@CloseEvent",
+            "Mizuki@Roguelike@NextLevel",
+            "Mizuki@Roguelike@ExitThenAbandon",
+            "Mizuki@Roguelike@Abandon",
+            "Mizuki@Roguelike@TodaysSupplies",
+            "Mizuki@Roguelike@Main",
+            "Mizuki@Roguelike@CloseAnno",
+            "Mizuki@Roguelike@TodoEnter",
+            "Mizuki@Roguelike@Continue",
+            "Mizuki@Roguelike@ReturnTo",
+            "Mizuki@Roguelike@ReturnToConfirm",
+            "Mizuki@Roguelike@OfflineConfirm",
+            "Mizuki@Roguelike@StartToWakeUp",
+            "Mizuki@Roguelike@StartUpConnectingFlag",
+            "Mizuki@Roguelike@FromStageSN"
         ]
     },
-    "Roguelike2@Roguelike@Continue": {},
-    "Roguelike2@Roguelike@InitalDrop": {},
-    "Roguelike2@Roguelike@DialogSkipConfirm": {
+    "Mizuki@Roguelike@Continue": {},
+    "Mizuki@Roguelike@InitalDrop": {},
+    "Mizuki@Roguelike@DialogSkipConfirm": {
+        "template": "Roguelike@DialogSkipConfirm.png",
         "next": [
-            "Roguelike2@Roguelike@DialogSkip",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@DialogSkip",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@LastReward": {},
-    "Roguelike2@Roguelike@LastReward2": {},
-    "Roguelike2@Roguelike@LastReward3": {},
-    "Roguelike2@Roguelike@LastReward4": {
+    "Mizuki@Roguelike@LastReward": {},
+    "Mizuki@Roguelike@LastReward2": {},
+    "Mizuki@Roguelike@LastReward3": {},
+    "Mizuki@Roguelike@LastReward4": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -8928,56 +9049,56 @@
             533
         ],
         "next": [
-            "Roguelike2@Roguelike@LastRewardConfirm"
+            "Mizuki@Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike2@Roguelike@LastRewardRand": {},
-    "Roguelike2@Roguelike@LastRewardConfirm": {
-        "template": "Roguelike2@Roguelike@RecruitConfirm.png"
+    "Mizuki@Roguelike@LastRewardRand": {},
+    "Mizuki@Roguelike@LastRewardConfirm": {
+        "template": "Mizuki@Roguelike@RecruitConfirm.png"
     },
-    "Roguelike2@Roguelike@Recruit1": {},
-    "Roguelike2@Roguelike@RecruitConfirm": {
+    "Mizuki@Roguelike@Recruit1": {},
+    "Mizuki@Roguelike@RecruitConfirm": {
         "next": [
-            "Roguelike2@Roguelike@LastReward",
-            "Roguelike2@Roguelike@LastReward2",
-            "Roguelike2@Roguelike@LastReward3",
-            "Roguelike2@Roguelike@LastReward4",
-            "Roguelike2@Roguelike@LastRewardRand",
-            "Roguelike2@Roguelike@Team3",
-            "Roguelike2@Roguelike@CloseCollection",
-            "Roguelike2@Roguelike@DialogSkip",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@MapObject"
+            "Mizuki@Roguelike@LastReward",
+            "Mizuki@Roguelike@LastReward2",
+            "Mizuki@Roguelike@LastReward3",
+            "Mizuki@Roguelike@LastReward4",
+            "Mizuki@Roguelike@LastRewardRand",
+            "Mizuki@Roguelike@Team3",
+            "Mizuki@Roguelike@CloseCollection",
+            "Mizuki@Roguelike@DialogSkip",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@MapObject"
         ]
     },
-    "Roguelike2@Roguelike@CloseCollection": {
+    "Mizuki@Roguelike@CloseCollection": {
         "next": [
-            "Roguelike2@Roguelike@LastReward",
-            "Roguelike2@Roguelike@LastReward2",
-            "Roguelike2@Roguelike@LastReward3",
-            "Roguelike2@Roguelike@LastReward4",
-            "Roguelike2@Roguelike@LastRewardRand",
-            "Roguelike2@Roguelike@Team3"
+            "Mizuki@Roguelike@LastReward",
+            "Mizuki@Roguelike@LastReward2",
+            "Mizuki@Roguelike@LastReward3",
+            "Mizuki@Roguelike@LastReward4",
+            "Mizuki@Roguelike@LastRewardRand",
+            "Mizuki@Roguelike@Team3"
         ]
     },
-    "Roguelike2@Roguelike@Team3": {},
-    "Roguelike2@Roguelike@TeamConfirm": {},
-    "Roguelike2@Roguelike@MapObject": {
+    "Mizuki@Roguelike@Team3": {},
+    "Mizuki@Roguelike@TeamConfirm": {},
+    "Mizuki@Roguelike@MapObject": {
         "action": "DoNothing",
         "cache": false,
         "roi": [
@@ -8987,102 +9108,99 @@
             123
         ],
         "next": [
-            "Roguelike2@Roguelike@RecruitOther"
+            "Mizuki@Roguelike@RecruitOther"
         ]
     },
-    "Roguelike2@Roguelike@RecruitMain": {
-        "template": "Roguelike2@Roguelike@Recruit.png"
+    "Mizuki@Roguelike@RecruitMain": {
+        "template": "Mizuki@Roguelike@Recruit.png"
     },
-    "Roguelike2@Roguelike@RecruitOther": {
-        "template": "Roguelike2@Roguelike@Recruit.png"
+    "Mizuki@Roguelike@RecruitOther": {
+        "template": "Mizuki@Roguelike@Recruit.png"
     },
-    "Roguelike2@Roguelike@RecruitCloseGuide": {},
-    "Roguelike2@Roguelike@ChooseOper": {
+    "Mizuki@Roguelike@RecruitCloseGuide": {},
+    "Mizuki@Roguelike@ChooseOper": {
         "next": [
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@ChooseOperConfirm"
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@ChooseOperConfirm"
         ]
     },
-    "Roguelike2@Roguelike@ChooseOperFlag": {
-        "template": "Roguelike2@Roguelike@ChooseOperConfirm.png"
+    "Mizuki@Roguelike@ChooseOperFlag": {
+        "template": "Mizuki@Roguelike@ChooseOperConfirm.png"
     },
-    "Roguelike2@Roguelike@ChooseOperConfirm": {},
-    "Roguelike2@Roguelike@RecruitWithoutButton": {
+    "Mizuki@Roguelike@ChooseOperConfirm": {},
+    "Mizuki@Roguelike@RecruitWithoutButton": {
         "next": [
-            "Roguelike2@Roguelike@RecruitOther",
-            "Roguelike2@Roguelike@EnterAfterRecruit",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@RecruitWithoutButton"
+            "Mizuki@Roguelike@RecruitOther",
+            "Mizuki@Roguelike@EnterAfterRecruit",
+            "Mizuki@Roguelike@TraderRandomShopping",
+            "Mizuki@Roguelike@StageTraderLeave",
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@RecruitWithoutButton"
         ]
     },
-    "Roguelike2@Roguelike@EnterAfterRecruit": {
+    "Mizuki@Roguelike@EnterAfterRecruit": {
         "next": [
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageTrader": {
+    "Mizuki@Roguelike@StageTrader": {
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageTraderEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageTraderEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageTraderEnter": {},
-    "Roguelike2@Roguelike@TraderRandomShoppingCancel": {
-        "template": "Roguelike2@Roguelike@StageTraderInvestCancel.png"
-    },
-    "Roguelike2@Roguelike@StageSafeHouse": {
+    "Mizuki@Roguelike@StageTraderEnter": {},
+    "Mizuki@Roguelike@StageSafeHouse": {
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageSafeHouseEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageSafeHouseEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageRegionalCommissioning": {
+    "Mizuki@Roguelike@StageRegionalCommissioning": {
         "Doc": "地区委托（随机奖励）",
         "action": "ClickSelf",
         "cache": false,
@@ -9094,26 +9212,26 @@
         ],
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageGambling": {
+    "Mizuki@Roguelike@StageGambling": {
         "Doc": "骰子关卡",
         "action": "ClickSelf",
         "cache": false,
@@ -9125,26 +9243,26 @@
         ],
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@DiceConfirm": {
+    "Mizuki@Roguelike@DiceConfirm": {
         "Doc": "骰子的确认按钮",
         "action": "ClickSelf",
         "cache": false,
@@ -9157,185 +9275,38 @@
         "templThreshold": 0.95,
         "rearDelay": 1000,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@ClickToDrops"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike2@Roguelike@StageSafeHouseEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1037,
-            374,
-            221,
-            221
-        ],
+    "Mizuki@Roguelike@StageSafeHouseEnter": {},
+    "Mizuki@Roguelike@StageTraderInvestSystemFull": {},
+    "Mizuki@Roguelike@ExitThenAbandon": {
+        "template": "Roguelike@ExitThenAbandon.png",
         "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterClickToLeave"
+            "Mizuki@Roguelike@ExitThenAbandon",
+            "Mizuki@Roguelike@Abandon",
+            "Mizuki@Roguelike@DiceConfirmThenAbandon",
+            "Mizuki@Roguelike@DataTraceback"
         ]
     },
-    "Roguelike2@Roguelike@StageTraderInvestSystem": {
-        "templThreshold": 0.75,
-        "action": "ClickSelf",
-        "roi": [
-            365,
-            51,
-            276,
-            216
-        ],
-        "exceededNext": [
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestSystemEnter",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestSystemEnter": {
-        "action": "ClickSelf",
-        "roi": [
-            417,
-            228,
-            502,
-            247
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestSystemError",
-            "Roguelike2@Roguelike@StageTraderInvestConfirm",
-            "Roguelike2@Roguelike@StageTraderInvestCancel"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            852,
-            422,
-            278,
-            144
-        ],
-        "rearDelay": 500,
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestSystemError",
-            "Roguelike2@Roguelike@StageTraderInvestSystemFull",
-            "Roguelike2@Roguelike@StageTraderInvestConfirm",
-            "Roguelike2@Roguelike@StageTraderInvestCancel"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestSystemError": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            508,
-            204,
-            235,
-            240
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestCancel"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestSystemFull": {
-        "algorithm": "OcrDetect",
-        "cache": false,
-        "reduceOtherTimes": [
-            "Roguelike2@Roguelike@StageTraderInvestConfirm"
-        ],
-        "text": [
-            "当前储备余额已达上限",
-            "当前",
-            "上限"
-        ],
-        "roi": [
-            982,
-            28,
-            298,
-            289
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestCancel"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestCancel": {
-        "action": "ClickSelf",
-        "roi": [
-            507,
-            418,
-            242,
-            149
-        ],
-        "exceededNext": [
-            "Roguelike2@Roguelike@ExitThenAbandon"
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestSystemLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderInvestSystemLeave": {
-        "action": "ClickSelf",
-        "roi": [
-            682,
-            420,
-            245,
-            143
-        ],
-        "next": [
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderLeave": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1046,
-            443,
-            234,
-            204
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderLeaveConfirm",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@ExitThenAbandon": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            0,
-            320,
-            160
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ExitThenAbandon",
-            "Roguelike2@Roguelike@Abandon",
-            "Roguelike2@Roguelike@DiceConfirmThenAbandon",
-            "Roguelike2@Roguelike@DataTraceback"
-        ]
-    },
-    "Roguelike2@Roguelike@DataTraceback": {
+    "Mizuki@Roguelike@DataTraceback": {
         "action": "DoNothing",
         "cache": false,
         "roi": [
@@ -9345,71 +9316,39 @@
             152
         ],
         "next": [
-            "Roguelike2@Roguelike@ClickToStartPoint"
+            "Mizuki@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike2@Roguelike@Abandon": {
-        "action": "ClickSelf",
-        "roi": [
-            1076,
-            243,
-            177,
-            179
-        ],
-        "next": [
-            "Roguelike2@Roguelike@AbandonConfirm",
-            "Roguelike2@Roguelike@Abandon"
-        ]
-    },
-    "Roguelike2@Roguelike@AbandonConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            720,
-            413,
-            249,
-            168
-        ],
-        "next": [
-            "Roguelike2@Roguelike@MissionFailedFlag2",
-            "Roguelike2@Roguelike@Start"
-        ]
-    },
-    "Roguelike2@Roguelike@StageTraderLeaveConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            985,
-            447,
-            295,
-            203
-        ],
+    "Mizuki@Roguelike@Abandon": {},
+    "Mizuki@Roguelike@StageTraderLeaveConfirm": {
+        "template": "Roguelike@StageTraderLeaveConfirm.png",
         "exceededNext": [
-            "Roguelike2@Roguelike@DiceConfirmThenAbandon",
-            "Roguelike2@Roguelike@ExitThenAbandon"
+            "Mizuki@Roguelike@DiceConfirmThenAbandon",
+            "Mizuki@Roguelike@ExitThenAbandon"
         ],
         "next": [
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@DiceConfirmThenAbandon": {
+    "Mizuki@Roguelike@DiceConfirmThenAbandon": {
         "Doc": "骰子的确认按钮",
         "action": "ClickSelf",
-        "template": "Roguelike2@Roguelike@DiceConfirm.png",
+        "template": "Mizuki@Roguelike@DiceConfirm.png",
         "cache": false,
         "roi": [
             551,
@@ -9419,10 +9358,10 @@
         ],
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@ExitThenAbandon"
+            "Mizuki@Roguelike@ExitThenAbandon"
         ]
     },
-    "Roguelike2@Roguelike@CloseCollectionContinue": {
+    "Mizuki@Roguelike@CloseCollectionContinue": {
         "action": "ClickSelf",
         "templThreshold": 0.9,
         "cache": false,
@@ -9437,29 +9376,29 @@
             255
         ],
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@CloseEvent",
-            "Roguelike2@Roguelike@ChooseOperFlag"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@CloseEvent",
+            "Mizuki@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike2@Roguelike@CloseCollectionClose": {
+    "Mizuki@Roguelike@CloseCollectionClose": {
         "action": "ClickSelf",
         "cache": false,
         "templThreshold": 0.9,
@@ -9474,361 +9413,186 @@
             255
         ],
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@CloseEvent",
-            "Roguelike2@Roguelike@ChooseOperFlag"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@CloseEvent",
+            "Mizuki@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike2@Roguelike@StageEncounter": {
-        "Doc": "不期而遇（随机奖励）",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
+    "Mizuki@Roguelike@StageEncounter": {
         "templThreshold": 0.96,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageBoons": {
-        "Doc": "古堡馈赠（随机奖励）",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
+    "Mizuki@Roguelike@StageBoons": {
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageEncounterEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1037,
-            374,
-            221,
-            221
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterClickToLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@StageEncounterFree": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1100,
-            0,
-            180,
-            700
-        ],
+    "Mizuki@Roguelike@StageEncounterEnter": {},
+    "Mizuki@Roguelike@StageEncounterFree": {
         "maskRange": [
             5,
             255
         ],
-        "preDelay": 500,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@ChooseOperFlag"
+            "Mizuki@Roguelike@StageEncounterLeaveConfirm",
+            "Mizuki@Roguelike@StageEncounterLeave",
+            "Mizuki@Roguelike@StageEncounterUnknown",
+            "Mizuki@Roguelike@StageEncounterFree",
+            "Mizuki@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike2@Roguelike@StageEncounterLeave": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1100,
-            0,
-            180,
-            700
-        ],
+    "Mizuki@Roguelike@StageEncounterLeave": {
         "maskRange": [
             5,
             255
         ],
-        "preDelay": 500,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@ChooseOperFlag"
+            "Mizuki@Roguelike@StageEncounterLeaveConfirm",
+            "Mizuki@Roguelike@StageEncounterFree",
+            "Mizuki@Roguelike@StageEncounterUnknown",
+            "Mizuki@Roguelike@StageEncounterLeave",
+            "Mizuki@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike2@Roguelike@StageEncounterUnknown": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            950,
-            50,
-            320,
-            580
-        ],
+    "Mizuki@Roguelike@StageEncounterUnknown": {
         "templThreshold": 0.91,
-        "preDelay": 1500,
         "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterLeaveConfirm",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown"
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@StageEncounterLeaveConfirm",
+            "Mizuki@Roguelike@StageEncounterFree",
+            "Mizuki@Roguelike@StageEncounterLeave",
+            "Mizuki@Roguelike@StageEncounterUnknown"
         ]
     },
-    "Roguelike2@Roguelike@StageEncounterLeaveConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1069,
-            0,
-            211,
-            700
-        ],
-        "rearDelay": 1000,
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterSpecialClose",
-            "Roguelike2@Roguelike@StageCambatDpsEnter",
-            "Roguelike2@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@StageEncounterSpecialClose": {
-        "Doc": "关掉“大锁”",
-        "action": "ClickSelf",
-        "roi": [
-            570,
-            400,
-            140,
-            138
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageEncounterSpecialClose",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@StageEncounterGiveUpRecruitConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            613,
-            410,
-            424,
-            171
-        ],
-        "next": [
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@StageEncounterClickToLeave": {
-        "algorithm": "JustReturn",
-        "action": "ClickRect",
-        "specificRect": [
-            600,
-            600,
-            50,
-            50
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterClickToLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@StageCambatDps": {
-        "Doc": "普通作战",
-        "action": "ClickSelf",
-        "cache": false,
+    "Mizuki@Roguelike@StageEncounterLeaveConfirm": {},
+    "Mizuki@Roguelike@StageEncounterSpecialClose": {},
+    "Mizuki@Roguelike@StageCambatDps": {
         "templThreshold": 0.95,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
         "next": [
-            "Roguelike2@Roguelike@StageCambatDpsEnter",
-            "Roguelike2@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageCambatDpsEnter",
+            "Mizuki@Roguelike@StageEmergencyDpsEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageCambatDpsEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1036,
-            371,
-            223,
-            223
-        ],
-        "next": [
-            "Roguelike2@Roguelike@QuickFormation"
-        ]
-    },
-    "Roguelike2@Roguelike@StageEmergencyDps": {
-        "Doc": "紧急作战",
-        "action": "ClickSelf",
-        "cache": false,
+    "Mizuki@Roguelike@StageCambatDpsEnter": {},
+    "Mizuki@Roguelike@StageEmergencyDps": {
         "templThreshold": 0.95,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
         "next": [
-            "Roguelike2@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike2@Roguelike@StageCambatDpsEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEmergencyDpsEnter",
+            "Mizuki@Roguelike@StageCambatDpsEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageEmergencyDpsEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1036,
-            371,
-            223,
-            223
-        ],
+    "Mizuki@Roguelike@StageEmergencyDpsEnter": {},
+    "Mizuki@Roguelike@StageDreadfulFoe": {
+        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错",
         "next": [
-            "Roguelike2@Roguelike@QuickFormation"
+            "Mizuki@Roguelike@StageDreadfulFoeEnter",
+            "Mizuki@Roguelike@StageEmergencyDpsEnter",
+            "Mizuki@Roguelike@StageCambatDpsEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageDreadfulFoe": {
-        "Doc": "险路恶敌（boss关卡）",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageDreadfulFoeEnter",
-            "Roguelike2@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike2@Roguelike@StageCambatDpsEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
-        ],
-        "next_Doc": "普通作战和紧急作战的图比较像，有时候会识别错，这里的next把两个开始的按钮都放进来，提高容错"
-    },
-    "Roguelike2@Roguelike@StageDreadfulFoe-5": {
+    "Mizuki@Roguelike@StageDreadfulFoe-5": {
         "Doc": "第五层的boss关卡",
         "action": "ClickSelf",
         "cache": false,
@@ -9840,29 +9604,29 @@
         ],
         "templThreshold": 0.85,
         "next": [
-            "Roguelike2@Roguelike@StageDreadfulFoe-5Enter",
-            "Roguelike2@Roguelike@StageDreadfulFoeEnter",
-            "Roguelike2@Roguelike@StageEmergencyDpsEnter",
-            "Roguelike2@Roguelike@StageCambatDpsEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageDreadfulFoe-5Enter",
+            "Mizuki@Roguelike@StageDreadfulFoeEnter",
+            "Mizuki@Roguelike@StageEmergencyDpsEnter",
+            "Mizuki@Roguelike@StageCambatDpsEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageEmergencyTransportation": {
+    "Mizuki@Roguelike@StageEmergencyTransportation": {
         "Doc": "紧急运输，拒绝可以获取3希望",
         "action": "ClickSelf",
         "cache": false,
@@ -9874,26 +9638,26 @@
         ],
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageWindAndRain": {
+    "Mizuki@Roguelike@StageWindAndRain": {
         "Doc": "风雨际会，拒绝可以获取4生命值",
         "action": "ClickSelf",
         "cache": false,
@@ -9905,85 +9669,27 @@
         ],
         "templThreshold": 0.95,
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageDreadfulFoeEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1036,
-            371,
-            223,
-            223
-        ],
-        "next": [
-            "Roguelike2@Roguelike@QuickFormation"
-        ]
-    },
-    "Roguelike2@Roguelike@QuickFormation": {
-        "Doc": "本任务注册了插件 RoguelikeFormationTaskPlugin",
-        "action": "ClickSelf",
-        "roi": [
-            817,
-            0,
-            402,
-            146
-        ],
-        "next": [
-            "Roguelike2@Roguelike@FormationConfirm"
-        ],
-        "rearDelay": 2000
-    },
-    "Roguelike2@Roguelike@FormationConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            1015,
-            601,
-            265,
-            119
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StartAction"
-        ]
-    },
-    "Roguelike2@Roguelike@StartAction": {
-        "template": "Roguelike2@Roguelike@StartAction.png",
-        "Doc": "本任务注册了插件 RoguelikeSkillSelectionTaskPlugin、RoguelikeBattleTaskPlugin",
-        "action": "ClickSelf",
-        "roi": [
-            905,
-            593,
-            375,
-            127
-        ],
-        "next": [
-            "Roguelike2@Roguelike@InBattleFlag",
-            "Roguelike2@Roguelike@MissionCompletedFlag",
-            "Roguelike2@Roguelike@MissionFailedFlag",
-            "Roguelike2@Roguelike@MissionFailedFlag2",
-            "Roguelike2@Roguelike@GamePassSkip1",
-            "Roguelike2@Roguelike@GamePassTheEndConfirm",
-            "Roguelike2@Roguelike@GamePass"
-        ]
-    },
-    "Roguelike2@Roguelike@NextLevel": {
+    "Mizuki@Roguelike@StageDreadfulFoeEnter": {},
+    "Mizuki@Roguelike@NextLevel": {
         "algorithm": "OcrDetect",
         "action": "ClickSelf",
         "cache": false,
@@ -10003,205 +9709,105 @@
             144
         ],
         "next": [
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@GamePassSkip1": {
-        "action": "ClickSelf",
-        "roi": [
-            1090,
-            0,
-            190,
-            144
-        ],
+    "Mizuki@Roguelike@GamePassSkip1": {},
+    "Mizuki@Roguelike@GamePassSkip1Confirm": {
         "next": [
-            "Roguelike2@Roguelike@GamePassSkip1Confirm"
+            "Mizuki@Roguelike@GamePassSkip2",
+            "Mizuki@Roguelike@GamePassTheEndConfirm",
+            "Mizuki@Roguelike@GamePass",
+            "Mizuki@Roguelike@DataTraceback"
         ]
     },
-    "Roguelike2@Roguelike@GamePassSkip1Confirm": {
-        "action": "ClickSelf",
-        "roi": [
-            715,
-            282,
-            171,
-            155
-        ],
+    "Mizuki@Roguelike@GamePass": {},
+    "Mizuki@Roguelike@ClickToDrops": {
         "next": [
-            "Roguelike2@Roguelike@GamePassSkip2",
-            "Roguelike2@Roguelike@GamePassTheEndConfirm",
-            "Roguelike2@Roguelike@GamePass",
-            "Roguelike2@Roguelike@DataTraceback"
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@StageEncounterSpecialClose",
+            "Mizuki@Roguelike@TraderRandomShopping",
+            "Mizuki@Roguelike@StageTraderLeave",
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@TodaysSupplies",
+            "Mizuki@Roguelike@Main",
+            "Mizuki@Roguelike@CloseAnno",
+            "Mizuki@Roguelike@OfflineConfirm",
+            "Mizuki@Roguelike@StartToWakeUp",
+            "Mizuki@Roguelike@StartUpConnectingFlag",
+            "Mizuki@Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike2@Roguelike@GamePassSkip2": {
-        "action": "ClickSelf",
-        "roi": [
-            1109,
-            0,
-            171,
-            138
-        ],
+    "Mizuki@Roguelike@DropsFlag": {
+        "template": "Roguelike@DropsFlag.png",
         "next": [
-            "Roguelike2@Roguelike@GamePassTheEndConfirm",
-            "Roguelike2@Roguelike@GamePass"
+            "Mizuki@Roguelike@GetDrop1",
+            "Mizuki@Roguelike@GetDrop2",
+            "Mizuki@Roguelike@GetDrop3",
+            "Mizuki@Roguelike@GetDropSelect",
+            "Mizuki@Roguelike@GetDropRecruit",
+            "Mizuki@Roguelike@GetDropBox",
+            "Mizuki@Roguelike@GetDropCompleted",
+            "Mizuki@Roguelike@GetDropLeave",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@StageEncounterFree",
+            "Mizuki@Roguelike@StageEncounterLeave",
+            "Mizuki@Roguelike@StageEncounterUnknown",
+            "Mizuki@Roguelike@StageEncounterSpecialClose",
+            "Mizuki@Roguelike@EnterAfterRecruit",
+            "Mizuki@Roguelike@StageTraderLeave",
+            "Mizuki@Roguelike@CloseEvent",
+            "Mizuki@Roguelike@DialogSkip"
         ]
     },
-    "Roguelike2@Roguelike@GamePassTheEndConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            554,
-            512,
-            177,
-            161
-        ],
-        "next": [
-            "Roguelike2@Roguelike@GamePass"
-        ]
-    },
-    "Roguelike2@Roguelike@GamePass": {
-        "cache": false,
-        "roi": [
-            400,
-            0,
-            500,
-            300
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ClickToStartPoint"
-        ]
-    },
-    "Roguelike2@Roguelike@InBattleFlag": {
-        "template": "BattleOfficiallyBegin.png",
-        "roi": [
-            1165,
-            20,
-            65,
-            65
-        ],
-        "maskRange": [
-            100,
-            255
-        ],
-        "action": "DoNothing",
-        "rearDelay": 5000,
-        "next": [
-            "Roguelike2@Roguelike@InBattleFlag",
-            "Roguelike2@Roguelike@MissionCompletedFlag",
-            "Roguelike2@Roguelike@MissionFailedFlag",
-            "Roguelike2@Roguelike@MissionFailedFlag2"
-        ]
-    },
-    "Roguelike2@Roguelike@MissionCompletedFlag": {
-        "roi": [
-            0,
-            0,
-            148,
-            143
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@ClickToDrops": {
-        "algorithm": "JustReturn",
-        "action": "ClickRect",
-        "specificRect": [
-            600,
-            600,
-            50,
-            50
-        ],
-        "rearDelay": 500,
-        "next": [
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterSpecialClose",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@TodaysSupplies",
-            "Roguelike2@Roguelike@Main",
-            "Roguelike2@Roguelike@CloseAnno",
-            "Roguelike2@Roguelike@OfflineConfirm",
-            "Roguelike2@Roguelike@StartToWakeUp",
-            "Roguelike2@Roguelike@StartUpConnectingFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@DropsFlag": {
-        "roi": [
-            875,
-            601,
-            152,
-            119
-        ],
-        "next": [
-            "Roguelike2@Roguelike@GetDrop1",
-            "Roguelike2@Roguelike@GetDrop2",
-            "Roguelike2@Roguelike@GetDrop3",
-            "Roguelike2@Roguelike@GetDropSelect",
-            "Roguelike2@Roguelike@GetDropRecruit",
-            "Roguelike2@Roguelike@GetDropBox",
-            "Roguelike2@Roguelike@GetDropCompleted",
-            "Roguelike2@Roguelike@GetDropLeave",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageEncounterFree",
-            "Roguelike2@Roguelike@StageEncounterLeave",
-            "Roguelike2@Roguelike@StageEncounterUnknown",
-            "Roguelike2@Roguelike@StageEncounterSpecialClose",
-            "Roguelike2@Roguelike@EnterAfterRecruit",
-            "Roguelike2@Roguelike@StageTraderLeave",
-            "Roguelike2@Roguelike@CloseEvent",
-            "Roguelike2@Roguelike@DialogSkip"
-        ]
-    },
-    "Roguelike2@Roguelike@CloseEvent": {
+    "Mizuki@Roguelike@CloseEvent": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -10211,80 +9817,31 @@
             136
         ],
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@CloseEvent"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@CloseEvent"
         ]
     },
-    "Roguelike2@Roguelike@GetDrop1": {
-        "Doc": "源石锭，绿色的“拿走”按钮",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            471,
-            1280,
-            157
-        ],
-        "templThreshold": 0.85,
-        "rearDelay": 1000,
-        "next": [
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDrop2": {
-        "Doc": "希望，黄色的“拿走”按钮",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            471,
-            1280,
-            157
-        ],
-        "templThreshold": 0.85,
-        "rearDelay": 1000,
-        "next": [
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDrop3": {
-        "Doc": "未知的剧目，黄色的“翻开”按钮",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            471,
-            1280,
-            157
-        ],
-        "rearDelay": 1000,
-        "templThreshold": 0.85,
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDropBox": {
+    "Mizuki@Roguelike@GetDrop1": {},
+    "Mizuki@Roguelike@GetDrop2": {},
+    "Mizuki@Roguelike@GetDrop3": {},
+    "Mizuki@Roguelike@GetDropBox": {
         "Doc": "漂流密匣“打开”按钮",
         "action": "ClickSelf",
         "cache": false,
@@ -10297,142 +9854,43 @@
         "templThreshold": 0.85,
         "rearDelay": 1000,
         "next": [
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@GetDropBoxSelect",
-            "Roguelike2@Roguelike@ChooseOperFlag"
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@GetDropBoxSelect",
+            "Mizuki@Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike2@Roguelike@GetDropRecruit": {
-        "Doc": "招募券，白色的“招募”按钮",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            471,
-            1280,
-            157
-        ],
-        "rearDelay": 1000,
+    "Mizuki@Roguelike@GetDropRecruit": {
         "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@GetDrop1",
-            "Roguelike2@Roguelike@GetDrop2",
-            "Roguelike2@Roguelike@GetDrop3",
-            "Roguelike2@Roguelike@GetDropSelect",
-            "Roguelike2@Roguelike@GetDropRecruit",
-            "Roguelike2@Roguelike@GetDropBox",
-            "Roguelike2@Roguelike@GetDropCompleted",
-            "Roguelike2@Roguelike@GetDropLeave"
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@GetDrop1",
+            "Mizuki@Roguelike@GetDrop2",
+            "Mizuki@Roguelike@GetDrop3",
+            "Mizuki@Roguelike@GetDropSelect",
+            "Mizuki@Roguelike@GetDropRecruit",
+            "Mizuki@Roguelike@GetDropBox",
+            "Mizuki@Roguelike@GetDropCompleted",
+            "Mizuki@Roguelike@GetDropLeave"
         ]
     },
-    "Roguelike2@Roguelike@GetDropSelect": {
-        "Doc": "“选择”按钮，有可能是招募二选一，也有收藏品二选一",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            471,
-            1280,
-            157
-        ],
-        "rearDelay": 2000,
+    "Mizuki@Roguelike@GetDropSelect": {},
+    "Roguelike@GetDropSelectRecruit": {
+        "template": "Mizuki@Roguelike@GetDropRecruit.png"
+    },
+    "Mizuki@Roguelike@GetDropSelectReward": {},
+    "Mizuki@Roguelike@GetDropCompleted": {
         "next": [
-            "Roguelike2@Roguelike@GetDropSelectRecruit",
-            "Roguelike2@Roguelike@GetDropSelectReward",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@GetDropCompleted",
-            "Roguelike2@Roguelike@GetDropSelect"
+            "Mizuki@Roguelike@GetDrop1",
+            "Mizuki@Roguelike@GetDrop2",
+            "Mizuki@Roguelike@GetDrop3",
+            "Mizuki@Roguelike@GetDropSelect",
+            "Mizuki@Roguelike@GetDropRecruit",
+            "Mizuki@Roguelike@GetDropBox",
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@ClickToDrops"
         ]
     },
-    "Roguelike2@Roguelike@GetDropSelectRecruit": {
-        "template": "Roguelike2@Roguelike@GetDropRecruit.png",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            420,
-            1280,
-            175
-        ],
-        "rearDelay": 1000,
-        "templThreshold": 0.85,
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@GetDropSelectRecruit"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDropSelectReward": {
-        "cache": false,
-        "action": "ClickSelf",
-        "roi": [
-            0,
-            420,
-            1280,
-            175
-        ],
-        "rearDelay": 1000,
-        "next": [
-            "Roguelike2@Roguelike@ClickToDrops",
-            "Roguelike2@Roguelike@GetDropSelectReward",
-            "Roguelike2@Roguelike@ChooseOperFlag"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDropCompleted": {
-        "action": "ClickRect",
-        "specificRect": [
-            600,
-            600,
-            50,
-            50
-        ],
-        "roi": [
-            488,
-            206,
-            302,
-            289
-        ],
-        "rearDelay": 3000,
-        "next": [
-            "Roguelike2@Roguelike@GetDrop1",
-            "Roguelike2@Roguelike@GetDrop2",
-            "Roguelike2@Roguelike@GetDrop3",
-            "Roguelike2@Roguelike@GetDropSelect",
-            "Roguelike2@Roguelike@GetDropRecruit",
-            "Roguelike2@Roguelike@GetDropBox",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDropLeave": {
-        "Doc": "不要了，走了（",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            218,
-            1280,
-            296
-        ],
-        "next": [
-            "Roguelike2@Roguelike@GetDropLeaveConfirm",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag"
-        ]
-    },
-    "Roguelike2@Roguelike@GetDropLeaveConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            484,
-            1280,
-            138
-        ],
-        "next": [
-            "Roguelike2@Roguelike@DropsFlag"
-        ]
-    },
-    "Roguelike2@Roguelike@MissionFailedFlag": {
+    "Mizuki@Roguelike@GetDropLeave": {},
+    "Mizuki@Roguelike@MissionFailedFlag": {
         "roi": [
             504,
             163,
@@ -10440,38 +9898,27 @@
             267
         ],
         "next": [
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@ClickToStartPoint"
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike2@Roguelike@MissionFailedFlag2": {
-        "cache": false,
-        "roi": [
-            473,
-            0,
-            351,
-            194
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ClickToStartPoint"
-        ]
-    },
-    "Roguelike2@Roguelike@CommissionedMissionCompleted": {
+    "Mizuki@Roguelike@MissionFailedFlag2": {},
+    "Mizuki@Roguelike@CommissionedMissionCompleted": {
         "action": "ClickRect",
         "specificRect": [
             600,
@@ -10488,68 +9935,59 @@
             154
         ],
         "next": [
-            "Roguelike2@Roguelike@StageEncounterEnter",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose"
+            "Mizuki@Roguelike@StageEncounterEnter",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@ClickToStartPoint": {
-        "algorithm": "JustReturn",
-        "action": "ClickRect",
-        "specificRect": [
-            600,
-            600,
-            50,
-            50
-        ],
-        "rearDelay": 1000,
+    "Mizuki@Roguelike@ClickToStartPoint": {
         "next": [
-            "Roguelike2@Roguelike@Start",
-            "Roguelike2@Roguelike@StageTrader",
-            "Roguelike2@Roguelike@StageSafeHouse",
-            "Roguelike2@Roguelike@StageWindAndRain",
-            "Roguelike2@Roguelike@StageEmergencyTransportation",
-            "Roguelike2@Roguelike@StageEncounter",
-            "Roguelike2@Roguelike@StageBoons",
-            "Roguelike2@Roguelike@StageCambatDps",
-            "Roguelike2@Roguelike@StageEmergencyDps",
-            "Roguelike2@Roguelike@StageDreadfulFoe",
-            "Roguelike2@Roguelike@StageDreadfulFoe-5",
-            "Roguelike2@Roguelike@StageRegionalCommissioning",
-            "Roguelike2@Roguelike@StageGambling",
-            "Roguelike2@Roguelike@CommissionedMissionCompleted",
-            "Roguelike2@Roguelike@DiceConfirm",
-            "Roguelike2@Roguelike@CloseCollectionContinue",
-            "Roguelike2@Roguelike@CloseCollectionClose",
-            "Roguelike2@Roguelike@GamePass",
-            "Roguelike2@Roguelike@TodaysSupplies",
-            "Roguelike2@Roguelike@Main",
-            "Roguelike2@Roguelike@CloseAnno",
-            "Roguelike2@Roguelike@TodoEnter",
-            "Roguelike2@Roguelike@Continue",
-            "Roguelike2@Roguelike@ReturnTo",
-            "Roguelike2@Roguelike@ReturnToConfirm",
-            "Roguelike2@Roguelike@OfflineConfirm",
-            "Roguelike2@Roguelike@StartToWakeUp",
-            "Roguelike2@Roguelike@StartUpConnectingFlag",
-            "Roguelike2@Roguelike@ClickToStartPoint"
+            "Mizuki@Roguelike@Start",
+            "Mizuki@Roguelike@StageTrader",
+            "Mizuki@Roguelike@StageSafeHouse",
+            "Mizuki@Roguelike@StageWindAndRain",
+            "Mizuki@Roguelike@StageEmergencyTransportation",
+            "Mizuki@Roguelike@StageEncounter",
+            "Mizuki@Roguelike@StageBoons",
+            "Mizuki@Roguelike@StageCambatDps",
+            "Mizuki@Roguelike@StageEmergencyDps",
+            "Mizuki@Roguelike@StageDreadfulFoe",
+            "Mizuki@Roguelike@StageDreadfulFoe-5",
+            "Mizuki@Roguelike@StageRegionalCommissioning",
+            "Mizuki@Roguelike@StageGambling",
+            "Mizuki@Roguelike@CommissionedMissionCompleted",
+            "Mizuki@Roguelike@DiceConfirm",
+            "Mizuki@Roguelike@CloseCollectionContinue",
+            "Mizuki@Roguelike@CloseCollectionClose",
+            "Mizuki@Roguelike@GamePass",
+            "Mizuki@Roguelike@TodaysSupplies",
+            "Mizuki@Roguelike@Main",
+            "Mizuki@Roguelike@CloseAnno",
+            "Mizuki@Roguelike@TodoEnter",
+            "Mizuki@Roguelike@Continue",
+            "Mizuki@Roguelike@ReturnTo",
+            "Mizuki@Roguelike@ReturnToConfirm",
+            "Mizuki@Roguelike@OfflineConfirm",
+            "Mizuki@Roguelike@StartToWakeUp",
+            "Mizuki@Roguelike@StartUpConnectingFlag",
+            "Mizuki@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike2@Roguelike@StageDreadfulFoe-5Enter": {
+    "Mizuki@Roguelike@StageDreadfulFoe-5Enter": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -10559,10 +9997,10 @@
             223
         ],
         "next": [
-            "Roguelike2@Roguelike@QuickFormation"
+            "Mizuki@Roguelike@QuickFormation"
         ]
     },
-    "Roguelike2@Roguelike@GetDropBoxSelect": {
+    "Mizuki@Roguelike@GetDropBoxSelect": {
         "Doc": "漂流密匣-锤子砸开“选择”按钮",
         "action": "ClickSelf",
         "cache": false,
@@ -10575,9 +10013,9 @@
         "templThreshold": 0.85,
         "rearDelay": 1000,
         "next": [
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@ClickToDrops"
+            "Mizuki@Roguelike@DropsFlag",
+            "Mizuki@Roguelike@ChooseOperFlag",
+            "Mizuki@Roguelike@ClickToDrops"
         ]
     }
 }
