@@ -18,8 +18,13 @@ bool asst::RoguelikeShoppingTaskPlugin::verify(AsstMsg msg, const json::value& d
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
-    if (details.at("details").at("task").as_string() == roguelike_name + "TraderRandomShopping") {
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const std::string& task = details.get("details", "task", "");
+    std::string_view task_view = task;
+    if (task_view.starts_with(roguelike_name)) {
+        task_view.remove_prefix(roguelike_name.length());
+    }
+    if (task_view == "Roguelike@TraderRandomShopping") {
         return true;
     }
     else {

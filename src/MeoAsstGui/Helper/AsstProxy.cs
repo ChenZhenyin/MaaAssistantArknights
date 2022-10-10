@@ -225,8 +225,8 @@ namespace MeoAsstGui
         public void Init()
         {
             // TODO: 屎山.jpg，过几个版本再把这两行删了
-            File.Delete(Directory.GetCurrentDirectory() + "\\resource\\addition\\Roguelike2\\resource\\roguelike_recruit.json");
-            File.Delete(Directory.GetCurrentDirectory() + "\\resource\\addition\\Roguelike2\\resource\\roguelike_shopping.json");
+            DirectoryInfo dir = new DirectoryInfo(Directory.GetCurrentDirectory() + "\\resource\\addition\\");
+            dir.Delete(true);
 
             bool loaded = LoadResource();
 
@@ -592,11 +592,11 @@ namespace MeoAsstGui
                 string taskName = details["details"]["task"].ToString();
                 var replaceNameMap = new Dictionary<string, string>
                 {
-                    { "Roguelike1@Roguelike@", "Roguelike" },
-                    { "Roguelike2@Roguelike@", "Roguelike" },
-                    { "Roguelike1@", "Roguelike" },
-                    { "Roguelike2@", "Roguelike" },
+                    { "Phantom@Roguelike@", "Roguelike" },
+                    { "Mizuki@Roguelike@", "Roguelike" },
                     { "Roguelike@", "Roguelike" },
+                    { "Phantom@", "Roguelike" },
+                    { "Mizuki@", "Roguelike" },
                 };
 
                 foreach (var ignoreName in replaceNameMap)
@@ -1417,7 +1417,7 @@ namespace MeoAsstGui
         /// <param name="squad"><paramref name="squad"/> TODO.</param>
         /// <param name="roles"><paramref name="roles"/> TODO.</param>
         /// <param name="core_char"><paramref name="core_char"/> TODO.</param>
-        /// <param name="roguelike_name">肉鸽名字。["Roguelike1", "Roguelike2"]</param>
+        /// <param name="roguelike_name">肉鸽名字。["Phantom", "Mizuki"]</param>
         /// <returns>是否成功。</returns>
         public bool AsstAppendRoguelike(int mode, int starts, bool investment_enabled, int invests, bool stop_when_full,
             string squad, string roles, string core_char, string roguelike_name)

@@ -18,19 +18,18 @@ bool asst::RoguelikeCustomStartTaskPlugin::verify(AsstMsg msg, const json::value
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
-    static const std::unordered_map<std::string_view, std::pair<AsstMsg, RoguelikeCustomType>> TaskMap = {
-        { "Recruit1", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Squad } },
-        { "Team3", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Roles } },
-        { "RecruitMain", { AsstMsg::SubTaskStart, RoguelikeCustomType::CoreChar } },
-    };
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
     const std::string& task = details.get("details", "task", "");
-    std::string_view task_name = task;
-    if (!task_name.starts_with(roguelike_name)) {
-        return false;
+    std::string_view task_view = task;
+    if (task_view.starts_with(roguelike_name)) {
+        task_view.remove_prefix(roguelike_name.length());
     }
-    task_name.remove_prefix(roguelike_name.length());
-    auto it = TaskMap.find(task_name);
+    static const std::unordered_map<std::string_view, std::pair<AsstMsg, RoguelikeCustomType>> TaskMap = {
+        { "Roguelike@Recruit1", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Squad } },
+        { "Roguelike@Team3", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Roles } },
+        { "Roguelike@RecruitMain", { AsstMsg::SubTaskStart, RoguelikeCustomType::CoreChar } },
+    };
+    auto it = TaskMap.find(task_view);
     if (it == TaskMap.cend()) {
         return false;
     }

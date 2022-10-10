@@ -17,10 +17,14 @@ bool asst::RoguelikeDebugTaskPlugin::verify(AsstMsg msg, const json::value& deta
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
-    std::string task = details.get("details", "task", std::string());
+    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const std::string& task = details.get("details", "task", "");
+    std::string_view task_view = task;
+    if (task_view.starts_with(roguelike_name)) {
+        task_view.remove_prefix(roguelike_name.length());
+    }
     if (msg == AsstMsg::SubTaskStart && details.get("subtask", std::string()) == "ProcessTask" &&
-        task == roguelike_name + "ExitThenAbandon") {
+        task_view == "Roguelike@ExitThenAbandon") {
         return true;
     }
 
