@@ -7250,7 +7250,9 @@
         ],
         "rearDelay": 1000
     },
-    "Roguelike1@Roguelike@TodoEnter": {
+    "Roguelike@TodoEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7264,10 +7266,11 @@
             255
         ],
         "next": [
-            "Roguelike1@Roguelike@TodoEnter",
-            "Roguelike1@Roguelike@Begin"
+            "Roguelike@TodoEnter",
+            "Roguelike@Begin"
         ]
     },
+    "Roguelike1@Roguelike@TodoEnter": {},
     "Roguelike@ReturnTo": {
         "template": "Return.png",
         "templThreshold": 0.7,
@@ -7318,7 +7321,9 @@
             "Roguelike1@Roguelike@FromStageSN"
         ]
     },
-    "Roguelike1@Roguelike@Continue": {
+    "Roguelike@Continue": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7329,11 +7334,12 @@
         ],
         "rearDelay": 500,
         "next": [
-            "Roguelike1@Roguelike@MissionFailedFlag2",
-            "Roguelike1@Roguelike@ExitThenAbandon"
+            "Roguelike@MissionFailedFlag2",
+            "Roguelike@ExitThenAbandon"
         ]
     },
-    "Roguelike1@Roguelike@ChooseDifficulty": {
+    "Roguelike1@Roguelike@Continue": {},
+    "Roguelike@ChooseDifficulty": {
         "action": "ClickSelf",
         "roi": [
             1061,
@@ -7342,10 +7348,10 @@
             71
         ],
         "next": [
-            "Roguelike1@Roguelike@Start"
+            "Roguelike@Start"
         ]
     },
-    "Roguelike1@Roguelike@Start": {
+    "Roguelike@Start": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7356,13 +7362,15 @@
         ],
         "rearDelay": 2000,
         "next": [
-            "Roguelike1@Roguelike@Recruit1",
-            "Roguelike1@Roguelike@InitalDrop",
-            "Roguelike1@Roguelike@Start"
+            "Roguelike@Recruit1",
+            "Roguelike@InitalDrop",
+            "Roguelike@Start"
         ]
     },
-    "Roguelike1@Roguelike@InitalDrop": {
-        "Doc": "古堡观光（简单模式）初始会有一个免费道具，点确认。月度小队也有，再多几次",
+    "Roguelike@InitalDrop": {
+        "Doc": "base_task",
+        "Doc2": "古堡观光（简单模式）初始会有一个免费道具，点确认。月度小队也有，再多几次",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             569,
@@ -7371,10 +7379,11 @@
             137
         ],
         "next": [
-            "Roguelike1@Roguelike@Recruit1",
-            "Roguelike1@Roguelike@InitalDrop"
+            "Roguelike@Recruit1",
+            "Roguelike@InitalDrop"
         ]
     },
+    "Roguelike1@Roguelike@InitalDrop": {},
     "Roguelike@DialogSkip": {
         "Doc": "月度小队，跳过对话",
         "action": "ClickSelf",
@@ -7389,14 +7398,18 @@
             "Roguelike@DialogSkipConfirm"
         ]
     },
-    "Roguelike1@Roguelike@DialogSkipConfirm": {
+    "Roguelike@DialogSkipConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             725,
             409,
             249,
             169
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@DialogSkipConfirm": {
         "next": [
             "Roguelike1@Roguelike@DialogSkip",
             "Roguelike1@Roguelike@StageTrader",
@@ -7408,8 +7421,10 @@
             "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@LastReward": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援——热水壶",
+    "Roguelike@LastReward": {
+        "Doc": "base_task",
+        "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援——热水壶",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7419,11 +7434,14 @@
             533
         ],
         "next": [
-            "Roguelike1@Roguelike@LastRewardConfirm"
+            "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastReward2": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 5 源石锭",
+    "Roguelike1@Roguelike@LastReward": {},
+    "Roguelike@LastReward2": {
+        "Doc": "base_task",
+        "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 5 源石锭",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7433,11 +7451,14 @@
             533
         ],
         "next": [
-            "Roguelike1@Roguelike@LastRewardConfirm"
+            "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastReward3": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 3 目标生命",
+    "Roguelike1@Roguelike@LastReward2": {},
+    "Roguelike@LastReward3": {
+        "Doc": "base_task",
+        "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 3 目标生命",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7447,11 +7468,14 @@
             533
         ],
         "next": [
-            "Roguelike1@Roguelike@LastRewardConfirm"
+            "Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike1@Roguelike@LastRewardRand": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 问号",
+    "Roguelike1@Roguelike@LastReward3": {},
+    "Roguelike@LastRewardRand": {
+        "Doc": "base_task",
+        "Doc2": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 问号",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7461,25 +7485,32 @@
             533
         ],
         "next": [
-            "Roguelike1@Roguelike@LastRewardConfirm"
+            "Roguelike@LastRewardConfirm"
+        ]
+    },
+    "Roguelike1@Roguelike@LastRewardRand": {},
+    "Roguelike@LastRewardConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
+        "action": "ClickSelf",
+        "cache": false,
+        "roi": [
+            174,
+            151,
+            935,
+            533
+        ],
+        "next": [
+            "Roguelike@Team3",
+            "Roguelike@CloseCollection"
         ]
     },
     "Roguelike1@Roguelike@LastRewardConfirm": {
-        "template": "Roguelike1@Roguelike@RecruitConfirm.png",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike1@Roguelike@Team3",
-            "Roguelike1@Roguelike@CloseCollection"
-        ]
+        "template": "Roguelike1@Roguelike@RecruitConfirm.png"
     },
-    "Roguelike1@Roguelike@Recruit1": {
+    "Roguelike@Recruit1": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7489,10 +7520,13 @@
             532
         ],
         "next": [
-            "Roguelike1@Roguelike@RecruitConfirm"
+            "Roguelike@RecruitConfirm"
         ]
     },
-    "Roguelike1@Roguelike@RecruitConfirm": {
+    "Roguelike1@Roguelike@Recruit1": {},
+    "Roguelike@RecruitConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7500,7 +7534,9 @@
             483,
             1280,
             200
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@RecruitConfirm": {
         "next": [
             "Roguelike1@Roguelike@LastReward",
             "Roguelike1@Roguelike@LastReward2",
@@ -7518,7 +7554,9 @@
             "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@CloseCollection": {
+    "Roguelike@CloseCollection": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7526,7 +7564,9 @@
             400,
             140,
             139
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@CloseCollection": {
         "next": [
             "Roguelike1@Roguelike@LastReward",
             "Roguelike1@Roguelike@LastReward2",
@@ -7535,7 +7575,9 @@
             "Roguelike1@Roguelike@Team3"
         ]
     },
-    "Roguelike1@Roguelike@Team3": {
+    "Roguelike@Team3": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7545,10 +7587,13 @@
             529
         ],
         "next": [
-            "Roguelike1@Roguelike@TeamConfirm"
+            "Roguelike@TeamConfirm"
         ]
     },
-    "Roguelike1@Roguelike@TeamConfirm": {
+    "Roguelike1@Roguelike@Team3": {},
+    "Roguelike@TeamConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7558,12 +7603,14 @@
             529
         ],
         "next": [
-            "Roguelike1@Roguelike@RecruitMain"
+            "Roguelike@RecruitMain"
         ]
     },
-    "Roguelike1@Roguelike@RecruitMain": {
+    "Roguelike1@Roguelike@TeamConfirm": {},
+    "Roguelike@RecruitMain": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
-        "template": "Roguelike1@Roguelike@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -7573,14 +7620,18 @@
             154
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@RecruitCloseGuide"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@RecruitCloseGuide"
         ],
         "rearDelay": 1000
     },
-    "Roguelike1@Roguelike@RecruitOther": {
+    "Roguelike1@Roguelike@RecruitMain": {
+        "template": "Roguelike1@Roguelike@Recruit.png"
+    },
+    "Roguelike@RecruitOther": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
-        "template": "Roguelike1@Roguelike@Recruit.png",
         "templThreshold": 0.6,
         "cache": false,
         "roi": [
@@ -7590,12 +7641,17 @@
             154
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@RecruitCloseGuide"
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@RecruitCloseGuide"
         ],
         "rearDelay": 1000
     },
-    "Roguelike1@Roguelike@RecruitCloseGuide": {
+    "Roguelike1@Roguelike@RecruitOther": {
+        "template": "Roguelike1@Roguelike@Recruit.png"
+    },
+    "Roguelike@RecruitCloseGuide": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             56,
@@ -7604,19 +7660,23 @@
             134
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOperFlag"
+            "Roguelike@ChooseOperFlag"
         ]
     },
-    "Roguelike1@Roguelike@ChooseOper": {
+    "Roguelike1@Roguelike@RecruitCloseGuide": {},
+    "Roguelike@ChooseOper": {
         "Doc": "本任务注册了插件 RoguelikeRecruitTaskPlugin",
         "algorithm": "JustReturn",
-        "action": "DoNothing",
+        "action": "DoNothing"
+    },
+    "Roguelike1@Roguelike@ChooseOper": {
         "next": [
             "Roguelike1@Roguelike@ChooseOperConfirm"
         ]
     },
-    "Roguelike1@Roguelike@ChooseOperFlag": {
-        "template": "Roguelike1@Roguelike@ChooseOperConfirm.png",
+    "Roguelike@ChooseOperFlag": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "DoNothing",
         "roi": [
             1016,
@@ -7625,11 +7685,16 @@
             118
         ],
         "next": [
-            "Roguelike1@Roguelike@ChooseOper",
-            "Roguelike1@Roguelike@RecruitCloseGuide"
+            "Roguelike@ChooseOper",
+            "Roguelike@RecruitCloseGuide"
         ]
     },
-    "Roguelike1@Roguelike@ChooseOperConfirm": {
+    "Roguelike1@Roguelike@ChooseOperFlag": {
+        "template": "Roguelike1@Roguelike@ChooseOperConfirm.png"
+    },
+    "Roguelike@ChooseOperConfirm": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7639,14 +7704,15 @@
             118
         ],
         "next": [
-            "Roguelike1@Roguelike@RecruitSkip",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageEncounterGiveUpRecruitConfirm",
-            "Roguelike1@Roguelike@ChooseOperConfirm",
-            "Roguelike1@Roguelike@RecruitWithoutButton"
+            "Roguelike@RecruitSkip",
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageEncounterGiveUpRecruitConfirm",
+            "Roguelike@ChooseOperConfirm",
+            "Roguelike@RecruitWithoutButton"
         ]
     },
-    "Roguelike1@Roguelike@RecruitSkip": {
+    "Roguelike1@Roguelike@ChooseOperConfirm": {},
+    "Roguelike@RecruitSkip": {
         "template": "RecruitSkip.png",
         "action": "ClickSelf",
         "roi": [
@@ -7656,16 +7722,16 @@
             150
         ],
         "next": [
-            "Roguelike1@Roguelike@RecruitSkip",
-            "Roguelike1@Roguelike@RecruitOther",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave",
-            "Roguelike1@Roguelike@DropsFlag",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@RecruitWithoutButton"
+            "Roguelike@RecruitSkip",
+            "Roguelike@RecruitOther",
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave",
+            "Roguelike@DropsFlag",
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@RecruitWithoutButton"
         ]
     },
-    "Roguelike1@Roguelike@RecruitWithoutButton": {
+    "Roguelike@RecruitWithoutButton": {
         "algorithm": "JustReturn",
         "action": "ClickRect",
         "specificRect": [
@@ -7673,7 +7739,9 @@
             15,
             85,
             60
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@RecruitWithoutButton": {
         "next": [
             "Roguelike1@Roguelike@RecruitOther",
             "Roguelike1@Roguelike@EnterAfterRecruit",
@@ -7684,7 +7752,9 @@
             "Roguelike1@Roguelike@RecruitWithoutButton"
         ]
     },
-    "Roguelike1@Roguelike@EnterAfterRecruit": {
+    "Roguelike@EnterAfterRecruit": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "roi": [
             1078,
@@ -7692,7 +7762,9 @@
             202,
             239
         ],
-        "rearDelay": 3000,
+        "rearDelay": 3000
+    },
+    "Roguelike1@Roguelike@EnterAfterRecruit": {
         "next": [
             "Roguelike1@Roguelike@StageTrader",
             "Roguelike1@Roguelike@StageSafeHouse",
@@ -7703,8 +7775,10 @@
             "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageTrader": {
-        "Doc": "诡意行商（交易所）",
+    "Roguelike@StageTrader": {
+        "Doc": "base_task",
+        "Doc2": "诡意行商（交易所）",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7712,7 +7786,9 @@
             53,
             1280,
             554
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@StageTrader": {
         "templThreshold": 0.85,
         "next": [
             "Roguelike1@Roguelike@StageTraderEnter",
@@ -7725,7 +7801,9 @@
             "Roguelike1@Roguelike@StageDreadfulFoe"
         ]
     },
-    "Roguelike1@Roguelike@StageTraderEnter": {
+    "Roguelike@StageTraderEnter": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7736,11 +7814,12 @@
         ],
         "rearDelay": 3000,
         "next": [
-            "Roguelike1@Roguelike@StageTraderInvestSystem",
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@StageTraderInvestSystem",
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@StageTraderLeave"
         ]
     },
+    "Roguelike1@Roguelike@StageTraderEnter": {},
     "Roguelike@TraderRandomShopping": {
         "Doc": "该任务注册了 RoguelikeShoppingTaskPlugin，若是点完了仍在当前界面，说明没啥要买的，直接离开商店（next 里的 Roguelike1StageTraderLeave）",
         "action": "ClickSelf",
@@ -7769,7 +7848,7 @@
             255
         ]
     },
-    "Roguelike1@Roguelike@TraderRandomShoppingConfirm": {
+    "Roguelike@TraderRandomShoppingConfirm": {
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7779,13 +7858,14 @@
             136
         ],
         "next": [
-            "Roguelike1@Roguelike@TraderRandomShopping",
-            "Roguelike1@Roguelike@ChooseOperFlag",
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@TraderRandomShopping",
+            "Roguelike@ChooseOperFlag",
+            "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@TraderRandomShoppingCancel": {
-        "template": "Roguelike1@Roguelike@StageTraderInvestCancel.png",
+    "Roguelike@TraderRandomShoppingCancel": {
+        "Doc": "base_task",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7795,11 +7875,16 @@
             250
         ],
         "next": [
-            "Roguelike1@Roguelike@StageTraderLeave"
+            "Roguelike@StageTraderLeave"
         ]
     },
-    "Roguelike1@Roguelike@StageSafeHouse": {
-        "Doc": "安全的角落",
+    "Roguelike1@Roguelike@TraderRandomShoppingCancel": {
+        "template": "Roguelike1@Roguelike@StageTraderInvestCancel.png"
+    },
+    "Roguelike@StageSafeHouse": {
+        "Doc": "base_task",
+        "Doc2": "安全的角落",
+        "template": "empty.png",
         "action": "ClickSelf",
         "cache": false,
         "roi": [
@@ -7807,7 +7892,9 @@
             53,
             1280,
             554
-        ],
+        ]
+    },
+    "Roguelike1@Roguelike@StageSafeHouse": {
         "templThreshold": 0.85,
         "next": [
             "Roguelike1@Roguelike@StageSafeHouseEnter",
@@ -8766,24 +8853,7 @@
             "Roguelike1@Roguelike@ClickToStartPoint"
         ]
     },
-    "Roguelike2@Roguelike@TodoEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            908,
-            54,
-            372,
-            500
-        ],
-        "maskRange": [
-            1,
-            255
-        ],
-        "next": [
-            "Roguelike2@Roguelike@TodoEnter",
-            "Roguelike2@Roguelike@Begin"
-        ]
-    },
+    "Roguelike2@Roguelike@TodoEnter": {},
     "Roguelike2@Roguelike@Begin": {
         "algorithm": "JustReturn",
         "next": [
@@ -8822,71 +8892,9 @@
             "Roguelike2@Roguelike@FromStageSN"
         ]
     },
-    "Roguelike2@Roguelike@Continue": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1032,
-            487,
-            248,
-            215
-        ],
-        "rearDelay": 500,
-        "next": [
-            "Roguelike2@Roguelike@MissionFailedFlag2",
-            "Roguelike2@Roguelike@ExitThenAbandon"
-        ]
-    },
-    "Roguelike2@Roguelike@ChooseDifficulty": {
-        "action": "ClickSelf",
-        "roi": [
-            1061,
-            373,
-            208,
-            71
-        ],
-        "next": [
-            "Roguelike2@Roguelike@Start"
-        ]
-    },
-    "Roguelike2@Roguelike@Start": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1026,
-            470,
-            254,
-            248
-        ],
-        "rearDelay": 2000,
-        "next": [
-            "Roguelike2@Roguelike@Recruit1",
-            "Roguelike2@Roguelike@InitalDrop",
-            "Roguelike2@Roguelike@Start"
-        ]
-    },
-    "Roguelike2@Roguelike@InitalDrop": {
-        "Doc": "古堡观光（简单模式）初始会有一个免费道具，点确认。月度小队也有，再多几次",
-        "action": "ClickSelf",
-        "roi": [
-            569,
-            583,
-            141,
-            137
-        ],
-        "next": [
-            "Roguelike2@Roguelike@Recruit1",
-            "Roguelike2@Roguelike@InitalDrop"
-        ]
-    },
+    "Roguelike2@Roguelike@Continue": {},
+    "Roguelike2@Roguelike@InitalDrop": {},
     "Roguelike2@Roguelike@DialogSkipConfirm": {
-        "action": "ClickSelf",
-        "roi": [
-            725,
-            409,
-            249,
-            169
-        ],
         "next": [
             "Roguelike2@Roguelike@DialogSkip",
             "Roguelike2@Roguelike@StageTrader",
@@ -8907,48 +8915,9 @@
             "Roguelike2@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@LastReward": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援——热水壶",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike2@Roguelike@LastRewardConfirm"
-        ]
-    },
-    "Roguelike2@Roguelike@LastReward2": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 5 源石锭",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike2@Roguelike@LastRewardConfirm"
-        ]
-    },
-    "Roguelike2@Roguelike@LastReward3": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 3 目标生命",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike2@Roguelike@LastRewardConfirm"
-        ]
-    },
+    "Roguelike2@Roguelike@LastReward": {},
+    "Roguelike2@Roguelike@LastReward2": {},
+    "Roguelike2@Roguelike@LastReward3": {},
     "Roguelike2@Roguelike@LastReward4": {
         "action": "ClickSelf",
         "cache": false,
@@ -8962,57 +8931,12 @@
             "Roguelike2@Roguelike@LastRewardConfirm"
         ]
     },
-    "Roguelike2@Roguelike@LastRewardRand": {
-        "Doc": "你的上一次探索突破了至少两层困难，这一次可以获得更多支援—— 问号",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike2@Roguelike@LastRewardConfirm"
-        ]
-    },
+    "Roguelike2@Roguelike@LastRewardRand": {},
     "Roguelike2@Roguelike@LastRewardConfirm": {
-        "template": "Roguelike2@Roguelike@RecruitConfirm.png",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            174,
-            151,
-            935,
-            533
-        ],
-        "next": [
-            "Roguelike2@Roguelike@Team3",
-            "Roguelike2@Roguelike@CloseCollection"
-        ]
+        "template": "Roguelike2@Roguelike@RecruitConfirm.png"
     },
-    "Roguelike2@Roguelike@Recruit1": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            153,
-            1280,
-            532
-        ],
-        "next": [
-            "Roguelike2@Roguelike@RecruitConfirm"
-        ]
-    },
+    "Roguelike2@Roguelike@Recruit1": {},
     "Roguelike2@Roguelike@RecruitConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            483,
-            1280,
-            200
-        ],
         "next": [
             "Roguelike2@Roguelike@LastReward",
             "Roguelike2@Roguelike@LastReward2",
@@ -9042,14 +8966,6 @@
         ]
     },
     "Roguelike2@Roguelike@CloseCollection": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            569,
-            400,
-            140,
-            139
-        ],
         "next": [
             "Roguelike2@Roguelike@LastReward",
             "Roguelike2@Roguelike@LastReward2",
@@ -9059,32 +8975,8 @@
             "Roguelike2@Roguelike@Team3"
         ]
     },
-    "Roguelike2@Roguelike@Team3": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            601,
-            153,
-            363,
-            529
-        ],
-        "next": [
-            "Roguelike2@Roguelike@TeamConfirm"
-        ]
-    },
-    "Roguelike2@Roguelike@TeamConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            153,
-            1280,
-            529
-        ],
-        "next": [
-            "Roguelike2@Roguelike@RecruitMain"
-        ]
-    },
+    "Roguelike2@Roguelike@Team3": {},
+    "Roguelike2@Roguelike@TeamConfirm": {},
     "Roguelike2@Roguelike@MapObject": {
         "action": "DoNothing",
         "cache": false,
@@ -9099,55 +8991,13 @@
         ]
     },
     "Roguelike2@Roguelike@RecruitMain": {
-        "action": "ClickSelf",
-        "template": "Roguelike2@Roguelike@Recruit.png",
-        "templThreshold": 0.6,
-        "cache": false,
-        "roi": [
-            190,
-            470,
-            300,
-            154
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@RecruitCloseGuide"
-        ],
-        "rearDelay": 1000
+        "template": "Roguelike2@Roguelike@Recruit.png"
     },
     "Roguelike2@Roguelike@RecruitOther": {
-        "action": "ClickSelf",
-        "template": "Roguelike2@Roguelike@Recruit.png",
-        "templThreshold": 0.6,
-        "cache": false,
-        "roi": [
-            190,
-            470,
-            900,
-            154
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@RecruitCloseGuide"
-        ],
-        "rearDelay": 1000
+        "template": "Roguelike2@Roguelike@Recruit.png"
     },
-    "Roguelike2@Roguelike@RecruitCloseGuide": {
-        "action": "ClickSelf",
-        "roi": [
-            56,
-            41,
-            194,
-            134
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOperFlag"
-        ]
-    },
+    "Roguelike2@Roguelike@RecruitCloseGuide": {},
     "Roguelike2@Roguelike@ChooseOper": {
-        "Doc": "本任务注册了插件 RoguelikeRecruitTaskPlugin",
-        "algorithm": "JustReturn",
-        "action": "DoNothing",
         "next": [
             "Roguelike2@Roguelike@CloseCollectionContinue",
             "Roguelike2@Roguelike@CloseCollectionClose",
@@ -9155,64 +9005,10 @@
         ]
     },
     "Roguelike2@Roguelike@ChooseOperFlag": {
-        "template": "Roguelike2@Roguelike@ChooseOperConfirm.png",
-        "action": "DoNothing",
-        "roi": [
-            1016,
-            602,
-            264,
-            118
-        ],
-        "next": [
-            "Roguelike2@Roguelike@ChooseOper",
-            "Roguelike2@Roguelike@RecruitCloseGuide"
-        ]
+        "template": "Roguelike2@Roguelike@ChooseOperConfirm.png"
     },
-    "Roguelike2@Roguelike@ChooseOperConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1016,
-            602,
-            264,
-            118
-        ],
-        "next": [
-            "Roguelike2@Roguelike@RecruitSkip",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageEncounterGiveUpRecruitConfirm",
-            "Roguelike2@Roguelike@ChooseOperConfirm",
-            "Roguelike2@Roguelike@RecruitWithoutButton"
-        ]
-    },
-    "Roguelike2@Roguelike@RecruitSkip": {
-        "template": "RecruitSkip.png",
-        "action": "ClickSelf",
-        "roi": [
-            1100,
-            0,
-            180,
-            150
-        ],
-        "next": [
-            "Roguelike2@Roguelike@RecruitSkip",
-            "Roguelike2@Roguelike@RecruitOther",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave",
-            "Roguelike2@Roguelike@DropsFlag",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@RecruitWithoutButton"
-        ]
-    },
+    "Roguelike2@Roguelike@ChooseOperConfirm": {},
     "Roguelike2@Roguelike@RecruitWithoutButton": {
-        "algorithm": "JustReturn",
-        "action": "ClickRect",
-        "specificRect": [
-            1180,
-            15,
-            85,
-            60
-        ],
         "next": [
             "Roguelike2@Roguelike@RecruitOther",
             "Roguelike2@Roguelike@EnterAfterRecruit",
@@ -9225,14 +9021,6 @@
         ]
     },
     "Roguelike2@Roguelike@EnterAfterRecruit": {
-        "action": "ClickSelf",
-        "roi": [
-            1078,
-            234,
-            202,
-            239
-        ],
-        "rearDelay": 3000,
         "next": [
             "Roguelike2@Roguelike@StageTrader",
             "Roguelike2@Roguelike@StageSafeHouse",
@@ -9253,15 +9041,6 @@
         ]
     },
     "Roguelike2@Roguelike@StageTrader": {
-        "Doc": "诡意行商（交易所）",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
         "templThreshold": 0.95,
         "next": [
             "Roguelike2@Roguelike@StageTraderEnter",
@@ -9280,61 +9059,11 @@
             "Roguelike2@Roguelike@CloseCollectionClose"
         ]
     },
-    "Roguelike2@Roguelike@StageTraderEnter": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            1035,
-            374,
-            226,
-            220
-        ],
-        "rearDelay": 3000,
-        "next": [
-            "Roguelike2@Roguelike@StageTraderInvestSystem",
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
-    },
-    "Roguelike2@Roguelike@TraderRandomShoppingConfirm": {
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            872,
-            425,
-            221,
-            136
-        ],
-        "next": [
-            "Roguelike2@Roguelike@TraderRandomShopping",
-            "Roguelike2@Roguelike@ChooseOperFlag",
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
-    },
+    "Roguelike2@Roguelike@StageTraderEnter": {},
     "Roguelike2@Roguelike@TraderRandomShoppingCancel": {
-        "template": "Roguelike2@Roguelike@StageTraderInvestCancel.png",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            350,
-            350,
-            500,
-            250
-        ],
-        "next": [
-            "Roguelike2@Roguelike@StageTraderLeave"
-        ]
+        "template": "Roguelike2@Roguelike@StageTraderInvestCancel.png"
     },
     "Roguelike2@Roguelike@StageSafeHouse": {
-        "Doc": "安全的角落",
-        "action": "ClickSelf",
-        "cache": false,
-        "roi": [
-            0,
-            53,
-            1280,
-            554
-        ],
         "templThreshold": 0.95,
         "next": [
             "Roguelike2@Roguelike@StageSafeHouseEnter",
