@@ -226,7 +226,10 @@ namespace MeoAsstGui
         {
             // TODO: 屎山.jpg，过几个版本再把这两行删了
             DirectoryInfo dir = new DirectoryInfo(Directory.GetCurrentDirectory() + "\\resource\\addition\\");
-            dir.Delete(true);
+            if (dir.Exists)
+            {
+                dir.Delete(true);
+            }
 
             bool loaded = LoadResource();
 

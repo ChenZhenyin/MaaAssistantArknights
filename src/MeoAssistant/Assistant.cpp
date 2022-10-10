@@ -93,6 +93,7 @@ asst::Assistant::TaskId asst::Assistant::append_task(const std::string& type, co
     else if (type == TASK::TaskType)                                           \
     {                                                                          \
         ptr = std::make_shared<TASK>(task_callback, static_cast<void*>(this)); \
+        ptr->set_status(m_status);                                             \
     }
 
     if constexpr (false) {}
