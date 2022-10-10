@@ -18,7 +18,7 @@ bool asst::RoguelikeSkillSelectionTaskPlugin::verify(AsstMsg msg, const json::va
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
     if (details.at("details").at("task").as_string() == roguelike_name + "StartAction") {
         return true;
     }

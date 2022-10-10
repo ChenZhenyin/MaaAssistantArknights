@@ -52,7 +52,7 @@ bool asst::RoguelikeTask::set_params(const json::value& params)
         return false;
     }
     m_status->set_properties("roguelike_name", roguelike_name);
-    roguelike_name += "@";
+    roguelike_name += "@Roguelike@";
     m_roguelike_task_ptr->set_tasks({ roguelike_name + "Begin" });
 
     int mode = params.get("mode", 0);

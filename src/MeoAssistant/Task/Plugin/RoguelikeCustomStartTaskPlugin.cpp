@@ -18,7 +18,7 @@ bool asst::RoguelikeCustomStartTaskPlugin::verify(AsstMsg msg, const json::value
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
     static const std::unordered_map<std::string_view, std::pair<AsstMsg, RoguelikeCustomType>> TaskMap = {
         { "Recruit1", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Squad } },
         { "Team3", { AsstMsg::SubTaskCompleted, RoguelikeCustomType::Roles } },

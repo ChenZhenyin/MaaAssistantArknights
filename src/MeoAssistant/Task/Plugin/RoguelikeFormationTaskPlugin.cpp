@@ -19,7 +19,7 @@ bool asst::RoguelikeFormationTaskPlugin::verify(AsstMsg msg, const json::value& 
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
     if (details.at("details").at("task").as_string() == roguelike_name + "QuickFormation") {
         return true;
     }

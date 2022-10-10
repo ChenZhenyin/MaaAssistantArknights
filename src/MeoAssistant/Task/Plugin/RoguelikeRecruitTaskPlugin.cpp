@@ -18,7 +18,7 @@ bool asst::RoguelikeRecruitTaskPlugin::verify(AsstMsg msg, const json::value& de
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
     if (details.at("details").at("task").as_string() == roguelike_name + "ChooseOper") {
         return true;
     }

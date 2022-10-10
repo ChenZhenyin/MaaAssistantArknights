@@ -592,8 +592,11 @@ namespace MeoAsstGui
                 string taskName = details["details"]["task"].ToString();
                 var replaceNameMap = new Dictionary<string, string>
                 {
+                    { "Roguelike1@Roguelike@", "Roguelike" },
+                    { "Roguelike2@Roguelike@", "Roguelike" },
                     { "Roguelike1@", "Roguelike" },
                     { "Roguelike2@", "Roguelike" },
+                    { "Roguelike@", "Roguelike" },
                 };
 
                 foreach (var ignoreName in replaceNameMap)

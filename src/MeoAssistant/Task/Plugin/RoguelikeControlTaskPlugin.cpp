@@ -16,7 +16,7 @@ bool asst::RoguelikeControlTaskPlugin::verify(AsstMsg msg, const json::value& de
     if (!roguelike_name_opt) {
         return false;
     }
-    const auto& roguelike_name = roguelike_name_opt.value() + "@";
+    const auto& roguelike_name = roguelike_name_opt.value() + "@Roguelike@";
     const std::string task = details.at("details").at("task").as_string();
     if (task == roguelike_name + "Start" || task == roguelike_name + "StageTraderInvestConfirm" ||
         task == roguelike_name + "StageTraderInvestSystemFull") {
